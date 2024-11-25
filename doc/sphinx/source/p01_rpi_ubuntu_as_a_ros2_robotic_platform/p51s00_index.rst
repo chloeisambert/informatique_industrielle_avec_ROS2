@@ -4,7 +4,7 @@ Ubuntu & RPi & ROS2
 
 .. toctree::
    :maxdepth: 2
-
+   p51s03_prise_main_materiel
    p51s01_installation_of_ubuntu
    p51s02_installation_of_ros2
 
