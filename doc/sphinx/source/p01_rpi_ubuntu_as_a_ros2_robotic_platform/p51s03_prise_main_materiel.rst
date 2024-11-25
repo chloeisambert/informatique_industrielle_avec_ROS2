@@ -10,25 +10,25 @@ Prise en main du matériel
   - Suivez les instructions fournies dans la `notice d'installation du radiateur <https://datasheets.raspberrypi.com/cooling/raspberry-pi-active-cooler-product-brief.pdf>`_.
 
 - **Installer le dissipateur thermique et le disque dur :**
-  - Retirer l'opercule du dissipateur thermique (lame bleue) et le coller sur le disque dur.
-  - Insérer le disque dur dans l'encoche de la carte NVMe BASE Pimoroni (attention au détrompeur).
-  - Fixer avec une vis de référence (vis-écrou-disque dur-écrou).
-  - Installer les 4 entretoises sur la base.
-  - Connecter la base à la Raspberry Pi en respectant les sens de branchement.
-  - Positionner et visser la Raspberry sur la base.
-  - Référez-vous au `support du disque dur Pimoroni <https://learn.pimoroni.com/article/getting-started-with-nvme-base>`_.
+    - Retirer l'opercule du dissipateur thermique (lame bleue) et le coller sur le disque dur.
+    - Insérer le disque dur dans l'encoche de la carte NVMe BASE Pimoroni (attention au détrompeur).
+    - Fixer avec une vis de référence (vis-écrou-disque dur-écrou).
+    - Installer les 4 entretoises sur la base.
+    - Connecter la base à la Raspberry Pi en respectant les sens de branchement.
+    - Positionner et visser la Raspberry sur la base.
+    - Référez-vous au `support du disque dur Pimoroni <https://learn.pimoroni.com/article/getting-started-with-nvme-base>`_.
 
 2. Installer l'OS
 =================
 
 - **Préparation initiale :**
-  - Insérez la carte SD contenant Raspbian dans la Raspberry Pi.
-  - Branchez le câble HDMI et l'alimentation.
-  - Si la carte SD est utilisée pour la première fois :
-    - Configurez les paramètres (langue : français, etc.).
-    - Identifiants par défaut : username : `pi`, password : `pi`.
-    - Configurez un partage de connexion avec votre téléphone pour accéder à Internet.
-    - Définissez Firefox comme navigateur par défaut, mettez à jour, puis redémarrez.
+    - Insérez la carte SD contenant Raspbian dans la Raspberry Pi.
+    - Branchez le câble HDMI et l'alimentation.
+    - Si la carte SD est utilisée pour la première fois :
+      - Configurez les paramètres (langue : français, etc.).
+      - Identifiants par défaut : username : `pi`, password : `pi`.
+      - Configurez un partage de connexion avec votre téléphone pour accéder à Internet.
+      - Définissez Firefox comme navigateur par défaut, mettez à jour, puis redémarrez.
 
 - **Installation du système sur le disque NVMe :**
   - Ouvrez un terminal et suivez la section *"Installing your OS onto the NVMe SSD"* dans le `guide de support Pimoroni <https://learn.pimoroni.com/article/getting-started-with-nvme-base>`_.
