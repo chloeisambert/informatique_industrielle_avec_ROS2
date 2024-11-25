@@ -103,31 +103,36 @@
 <li><p><strong>Installer le radiateur sur la Raspberry Pi :</strong>
 - Retirer le cache du connecteur JST avant installation.
 - Suivez les instructions fournies dans la <a class="reference external" href="https://datasheets.raspberrypi.com/cooling/raspberry-pi-active-cooler-product-brief.pdf">notice d’installation du radiateur</a>.</p></li>
-<li><p><strong>Installer le dissipateur thermique et le disque dur :</strong>
-- Retirer l’opercule du dissipateur thermique (lame bleue) et le coller sur le disque dur.
-- Insérer le disque dur dans l’encoche de la carte NVMe BASE Pimoroni (attention au détrompeur).
-- Fixer avec une vis de référence (vis-écrou-disque dur-écrou).
-- Installer les 4 entretoises sur la base.
-- Connecter la base à la Raspberry Pi en respectant les sens de branchement.
-- Positionner et visser la Raspberry sur la base.
-- Référez-vous au <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">support du disque dur Pimoroni</a>.</p></li>
+<li><dl class="simple">
+<dt><strong>Installer le dissipateur thermique et le disque dur :</strong></dt><dd><ul>
+<li><p>Retirer l’opercule du dissipateur thermique (lame bleue) et le coller sur le disque dur.</p></li>
+<li><p>Insérer le disque dur dans l’encoche de la carte NVMe BASE Pimoroni (attention au détrompeur).</p></li>
+<li><p>Fixer avec une vis de référence (vis-écrou-disque dur-écrou).</p></li>
+<li><p>Installer les 4 entretoises sur la base.</p></li>
+<li><p>Connecter la base à la Raspberry Pi en respectant les sens de branchement.</p></li>
+<li><p>Positionner et visser la Raspberry sur la base.</p></li>
+<li><p>Référez-vous au <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">support du disque dur Pimoroni</a>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </section>
 <section id="installer-l-os">
 <h2>2. Installer l’OS<a class="headerlink" href="#installer-l-os" title="Lien vers cette rubrique"></a></h2>
 <ul>
-<li><p><strong>Préparation initiale :</strong>
-- Insérez la carte SD contenant Raspbian dans la Raspberry Pi.
-- Branchez le câble HDMI et l’alimentation.
-- Si la carte SD est utilisée pour la première fois :</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Configurez les paramètres (langue : français, etc.).</p></li>
-<li><p>Identifiants par défaut : username : <cite>pi</cite>, password : <cite>pi</cite>.</p></li>
-<li><p>Configurez un partage de connexion avec votre téléphone pour accéder à Internet.</p></li>
-<li><p>Définissez Firefox comme navigateur par défaut, mettez à jour, puis redémarrez.</p></li>
+<li><dl class="simple">
+<dt><strong>Préparation initiale :</strong></dt><dd><ul class="simple">
+<li><p>Insérez la carte SD contenant Raspbian dans la Raspberry Pi.</p></li>
+<li><p>Branchez le câble HDMI et l’alimentation.</p></li>
+<li><p>Si la carte SD est utilisée pour la première fois :
+- Configurez les paramètres (langue : français, etc.).
+- Identifiants par défaut : username : <cite>pi</cite>, password : <cite>pi</cite>.
+- Configurez un partage de connexion avec votre téléphone pour accéder à Internet.
+- Définissez Firefox comme navigateur par défaut, mettez à jour, puis redémarrez.</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </li>
 <li><p><strong>Installation du système sur le disque NVMe :</strong>
 - Ouvrez un terminal et suivez la section <em>« Installing your OS onto the NVMe SSD »</em> dans le <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">guide de support Pimoroni</a>.
