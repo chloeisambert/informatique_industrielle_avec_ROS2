@@ -1,0 +1,26 @@
+{
+    "version": 4,
+    "configurations": [
+        {
+            "name": "Win32",  // Ou le système cible, par exemple "Linux", "Mac"
+            "includePath": [
+                "${workspaceFolder}/**",  // Inclure les dossiers du projet
+                "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/repository/DynamixelSDK/c/include/"  // Chemin vers les fichiers d'en-tête de dynamixelsdk
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",  // Utilisez le chemin correct vers votre compilateur
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",  // Mode d'intelliSense adapté à votre compilateur
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/repository/DynamixelSDK/c/include/"  // Indiquer à IntelliSense où chercher
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ]
+}
+
+
