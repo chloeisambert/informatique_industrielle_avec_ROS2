@@ -67,7 +67,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#preparation-du-materiel">1. Préparation du matériel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installer-l-os">2. Installer l’OS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#outils">3. Outils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#creer-le-depot-github">4. Créer le dépôt GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#utilisation-de-github">4. Utilisation de GitHub</a></li>
 </ul>
 </li>
 </ul>
@@ -183,12 +183,18 @@
 - Utilisez le logiciel Shutter : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">shutter</span></code>.</p></li>
 </ul>
 </section>
-<section id="creer-le-depot-github">
-<h2>4. Créer le dépôt GitHub<a class="headerlink" href="#creer-le-depot-github" title="Lien vers cette rubrique"></a></h2>
+<section id="utilisation-de-github">
+<h2>4. Utilisation de GitHub<a class="headerlink" href="#utilisation-de-github" title="Lien vers cette rubrique"></a></h2>
 <ul class="simple">
 <li><p>Après avoir créé le dépôt, visualisez la documentation via :
 - Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.
 - Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
+<li><p>Pour mettre à jour un fork déjà réalisé :
+- il faut vérifié si il y a un upstream -&gt; git remote -v
+- Si aucun upstream est présent, il faut le créer : git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:yguel/informatique_industrielle_avec_ROS2.git
+- Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream
+- Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -&gt; git rebase upstream/rolling
+- Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull</p></li>
 </ul>
 </section>
 </section>
