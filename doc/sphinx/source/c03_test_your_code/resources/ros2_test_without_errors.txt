@@ -1,0 +1,14 @@
+[1] 140979
+Starting >>> scara_description
+Starting >>> scara_bringup
+Starting >>> scara_joint_velocity_controller
+Starting >>> scara_nodes
+Finished <<< scara_joint_velocity_controller [0.03s]
+Finished <<< scara_description [0.60s]                                                                  
+Starting >>> scara_hardware
+Finished <<< scara_hardware [0.01s]                                                                  
+Finished <<< scara_nodes [0.96s]                                             
+Finished <<< scara_bringup [1.17s]          
+
+Summary: 5 packages finished [1.38s]
+[1]+  Done                    source install/setup.bash

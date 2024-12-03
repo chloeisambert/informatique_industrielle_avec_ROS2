@@ -1,0 +1,2 @@
+ERROR bad_format_rst_file.rst:1 Error in "code-block" directive:
+maximum 1 argument(s) allowed, 6 supplied.

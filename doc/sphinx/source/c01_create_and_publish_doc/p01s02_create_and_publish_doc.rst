@@ -52,7 +52,7 @@ Ouvrir le répertoire du projet avec vscode:
 
    code .
 
-Maintenant vous allez remplir le fichier ``settings.json`` avec le contenu suivant:
+Maintenant vous allez remplir le fichier ``settings.json`` situé dans le dossier caché ``.vscode`` à la racine du projet, avec le contenu suivant:
 
 .. literalinclude:: resources/code/config.vscode/settings.json
    :language: json
@@ -69,7 +69,8 @@ Les options de ce fichier permettent:
 - d'augmenter la taille de l'historique du terminal (ligne 11)
 - de laisser les fichiers consultés ouverts dans l'éditeur quand ils ont été ouverts par des actions de preview (ligne 12), comme par exemple pour consulter une ligne liée à une erreur dans un log ou un processus de compilation. Cela permet d'avoir en simultané le fichier de log ou d'erreur et le fichier de code ouvert dans l'éditeur.
 
-Et le fichier ``keybindings.json`` avec le contenu suivant:
+
+Vous allez ouvrir le fichier ``keybindings.json`` (situé dans votre dossier home ``~/.config/Code/User``) avec le contenu suivant:
 
 .. literalinclude:: resources/code/config.vscode/keybindings.json
    :language: json
@@ -100,7 +101,6 @@ Dans vscode vous allez cliquer sur l'icone
 .. _vscode_extension_icon:
 .. figure:: resources/img/vscode_extension.png
    :align: center
-   :width: 60%
 
    Clickez sur l'icone Extensions
 
@@ -108,69 +108,84 @@ Et vous allez installer les extensions suivantes qui seront très utile pour le 
 
 Édition de code:
 ^^^^^^^^^^^^^^^^
-#. Gremlins tracker by Nicolas Hoizey
+#. Gremlins tracker par Nicolas Hoizey
 
    - ID: nhoizey.gremlins
    - permet de voir tous les charactères invisibles dans le code qui peuvent nous pourrir la vie
 
 git:
 ^^^^
-#. Git Graph by mhutchie
+#. Git Graph par mhutchie
 
    - ID: mhutchie.git-graph
 
 python:
 ^^^^^^^
-#. Python by microsoft
+#. Python par microsoft
 
    - ID: ms-python.python
-#. Python Debugger by microsoft
+#. Python Debugger par microsoft
 
    - ID: ms-python.debugpy
 
 Documentation:
 ^^^^^^^^^^^^^^
-#. Esbonio by Swyddfa
+#. Esbonio par Swyddfa
 
    - ID: swyddfa.Esbonio
 
 
 c/c++/ embarqué:
 ^^^^^^^^^^^^^^^^
-#. C/C++ by microsoft
+#. C/C++ par microsoft
 
    - ID: ms-vscode.cpptools
 
-#. GDB Debugger - Beyond by coolchyni
+#. GDB Debugger - Beyond par coolchyni
 
    - ID: coolchyni.beyond-debug
 
-#. vscode-valgrind by krosf
+#. vscode-valgrind par krosf
 
    - ID: krosf.vscode-valgrind
 
-#. CMake Tools by microsoft
+#. CMake Tools par microsoft
 
    - ID: ms-vscode.cmake-tools
 
-#. Debug Visualizer by Henning Dieterichs 
+#. Debug Visualizer par Henning Dieterichs 
 
    - ID: hediet.debug-visualizer
 
-#. Hex Array Formatter by AloyseTech
+#. Hex Array Formatter par AloyseTech
 
    - ID: AloyseTech.hex-array-formatter
 
 
 ROS2:
 ^^^^^
-#. Uncrustify by Zachary Flower
+#. Uncrustify par Zachary Flower
 
    - ID: zachflower.uncrustify
-   - allows to do good formatting for ROS2
+   - permet de bien formatter des fichiers ROS2
+
+#. ROS2 par nonanonno 
+
+   - ID: nonanonno.vscode-ros2
+   - permet de la coloration syntaxique pour les fichiers ROS2
+
+#. ROS2 par JaehyunShim
+
+   - ID: jaehyunshim.vscode-ros2
+   - permet d'utiliser des pattern de code ROS2 et de les ajouter dans son code rapidement
+
+#. ROS 2 Ament Task Provider par Allison Thackston
+
+   - ID: althack.ament-task-provider
+   - ajoute des tâches automatiques notamment pour tester le formattage des fichiers ROS2
 
 Assistant IA:
 ^^^^^^^^^^^^^
-#. GitHub Copilot by github
+#. GitHub Copilot par github
 
    - ID: GitHub.copilot

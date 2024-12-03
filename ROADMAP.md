@@ -65,8 +65,21 @@
 
 ## Outils spécifiques à la robotique
 
+  0. Visualization avec RViz
+  1. Voir les Tf
+  2. mettre le robot dans un état avec un topic et le voir dans RViz
+
   1. Simulation en robotique
   2. Simulation en robotique avec ROS2 et gazebo
+
+
+
+## Process visualization RViz avec l'URDF
+
+1. Partir du fichier et identifier/séparer les composants
+2. Afficher les composants 1 à 1
+3. Les positionner avec RViz
+4. Vérifier les angles de rotation et les butées
 
 
 

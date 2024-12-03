@@ -1,0 +1,6 @@
+build/scara_bringup/Testing/20241121-1426/Test.xml: 5 tests, 0 errors, 1 failure, 0 skipped
+build/scara_bringup/test_results/scara_bringup/flake8.xunit.xml: 21 tests, 0 errors, 21 failures, 0 skipped
+build/scara_nodes/Testing/20241121-1426/Test.xml: 4 tests, 0 errors, 1 failure, 0 skipped
+build/scara_nodes/test_results/scara_nodes/flake8.xunit.xml: 5 tests, 0 errors, 5 failures, 0 skipped
+
+Summary: 50 tests, 0 errors, 28 failures, 0 skipped

@@ -78,6 +78,17 @@ Si tout s'est bien passé, vous devriez voir un message de succès à la fin de 
    ``ros2_humble`` est un alias qui charge l'environnement ROS2 de la distribution humble.
    ``ros2_build`` est un alias qui installe les dépendences et compile tout le workspace ROS2 courant.
 
+===========================
+Extension vscode pour ROS2
+===========================
+
+Pour faciliter la rédaction de code ROS2, il est très utile d'installer les extensions suivantes:
+
+#. ``ROS2`` de nonanonno (nonanonno.vscode-ros2)
+#. ``RO2`` de JaehyunShim (jaehyunshim.vscode-ros2)
+#. ``ROS 2 Ament Task Provider`` de Allison Thackston (althack.ament-task-provider)
+
+
 ===============================================
 Créer la description URDF physique d'un robot 
 ===============================================

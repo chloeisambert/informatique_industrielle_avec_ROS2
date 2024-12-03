@@ -1,0 +1,26 @@
+[1] 129806
+Starting >>> scara_description
+Starting >>> scara_bringup
+Starting >>> scara_joint_velocity_controller
+Starting >>> scara_nodes
+Finished <<< scara_joint_velocity_controller [0.09s]                                                                                             
+Finished <<< scara_description [0.66s]                                                                  
+Starting >>> scara_hardware
+Finished <<< scara_hardware [0.08s]                                                                  
+--- stderr: scara_bringup                                                    
+Errors while running CTest
+Output from these tests are in: /home/pi/info_indus/ros2_ws/build/scara_bringup/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+---
+Finished <<< scara_bringup [1.04s]      [ with test failures ]
+--- stderr: scara_nodes
+Errors while running CTest
+Output from these tests are in: /home/pi/info_indus/ros2_ws/build/scara_nodes/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+---
+Finished <<< scara_nodes [1.06s]        [ with test failures ]
+
+Summary: 5 packages finished [1.46s]
+  2 packages had stderr output: scara_bringup scara_nodes
+  2 packages had test failures: scara_bringup scara_nodes
+[1]+  Done                    source install/setup.bash

@@ -44,6 +44,29 @@ function ros2_test_only {
 colcon test --ctest-args tests --packages-select  $@
 }
 
+function ros2_test_only_stop_when_fails {
+colcon test --ctest-args "--debug --stop-on-failure --verbose tests" --packages-select  $@
+}
+
+function ros2_test_only_pkg_test() 
+{
+    local pkg=$1
+    local test=$2
+    colcon test --ctest-args "--debug --verbose --tests-regex $2 tests" --packages-select  $1
+}
+
+function ros2_test_only_stop_when_fails_pkg_test 
+{
+    local pkg=$1
+    local test=$2
+    colcon test --ctest-args "--debug --stop-on-failure --verbose --tests-regex $2 tests" --packages-select  $1
+}
+
+function ros2_view_result_of_test() 
+{
+    colcon test-result --verbose --test-result-base build/$@
+}
+
 function ros2_build_except {
 old="$IFS"
 IFS='|'
