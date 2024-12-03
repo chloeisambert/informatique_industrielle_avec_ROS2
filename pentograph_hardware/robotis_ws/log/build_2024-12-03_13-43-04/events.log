@@ -1,0 +1,746 @@
+[0.000000] (-) TimerEvent: {}
+[0.000378] (dynamixel_sdk) JobQueued: {'identifier': 'dynamixel_sdk', 'dependencies': OrderedDict()}
+[0.000720] (dynamixel_sdk_custom_interfaces) JobQueued: {'identifier': 'dynamixel_sdk_custom_interfaces', 'dependencies': OrderedDict()}
+[0.000759] (dynamixel_sdk_examples) JobQueued: {'identifier': 'dynamixel_sdk_examples', 'dependencies': OrderedDict({'dynamixel_sdk': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk', 'dynamixel_sdk_custom_interfaces': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces'})}
+[0.001723] (dynamixel_sdk) JobStarted: {'identifier': 'dynamixel_sdk'}
+[0.025844] (dynamixel_sdk_custom_interfaces) JobStarted: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.046474] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'cmake'}
+[0.047898] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'build'}
+[0.048943] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk', '--', '-j4', '-l4'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[0.061300] (dynamixel_sdk_custom_interfaces) JobProgress: {'identifier': 'dynamixel_sdk_custom_interfaces', 'progress': 'cmake'}
+[0.062393] (dynamixel_sdk_custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[0.092431] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099737] (-) TimerEvent: {}
+[0.200139] (-) TimerEvent: {}
+[0.203458] (dynamixel_sdk) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk\n'}
+[0.237577] (dynamixel_sdk) CommandEnded: {'returncode': 0}
+[0.238640] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'install'}
+[0.260470] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[0.279768] (dynamixel_sdk) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.280647] (dynamixel_sdk) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.281631] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h\n'}
+[0.300319] (-) TimerEvent: {}
+[0.309646] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h\n'}
+[0.338301] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h\n'}
+[0.361533] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h\n'}
+[0.382386] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h\n'}
+[0.400488] (-) TimerEvent: {}
+[0.408826] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h\n'}
+[0.438308] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h\n'}
+[0.460527] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h\n'}
+[0.481855] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h\n'}
+[0.498795] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h\n'}
+[0.500563] (-) TimerEvent: {}
+[0.528023] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h\n'}
+[0.551072] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h\n'}
+[0.577015] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h\n'}
+[0.600767] (-) TimerEvent: {}
+[0.606020] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so\n'}
+[0.626648] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.637249] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh\n'}
+[0.643251] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[0.656325] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv\n'}
+[0.679436] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk\n'}
+[0.698922] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk\n'}
+[0.701574] (-) TimerEvent: {}
+[0.739617] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.741070] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh\n'}
+[0.762880] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv\n'}
+[0.770531] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.785199] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh\n'}
+[0.801753] (-) TimerEvent: {}
+[0.811126] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv\n'}
+[0.815214] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.836763] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash\n'}
+[0.852111] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.856849] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh\n'}
+[0.879279] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh\n'}
+[0.885819] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.898042] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv\n'}
+[0.901854] (-) TimerEvent: {}
+[0.923183] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.930091] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv\n'}
+[0.950692] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk\n'}
+[0.976232] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.998583] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.002011] (-) TimerEvent: {}
+[1.040651] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake\n'}
+[1.063246] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake\n'}
+[1.087929] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml\n'}
+[1.104039] (-) TimerEvent: {}
+[1.125302] (dynamixel_sdk) CommandEnded: {'returncode': 0}
+[1.175221] (dynamixel_sdk) JobEnded: {'identifier': 'dynamixel_sdk', 'rc': 0}
+[1.204189] (-) TimerEvent: {}
+[1.304704] (-) TimerEvent: {}
+[1.405309] (-) TimerEvent: {}
+[1.505880] (-) TimerEvent: {}
+[1.606247] (-) TimerEvent: {}
+[1.706669] (-) TimerEvent: {}
+[1.807100] (-) TimerEvent: {}
+[1.907662] (-) TimerEvent: {}
+[2.008221] (-) TimerEvent: {}
+[2.108811] (-) TimerEvent: {}
+[2.209286] (-) TimerEvent: {}
+[2.265108] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.309449] (-) TimerEvent: {}
+[2.409901] (-) TimerEvent: {}
+[2.510259] (-) TimerEvent: {}
+[2.610631] (-) TimerEvent: {}
+[2.710978] (-) TimerEvent: {}
+[2.811388] (-) TimerEvent: {}
+[2.911943] (-) TimerEvent: {}
+[3.012525] (-) TimerEvent: {}
+[3.113104] (-) TimerEvent: {}
+[3.213576] (-) TimerEvent: {}
+[3.314033] (-) TimerEvent: {}
+[3.414467] (-) TimerEvent: {}
+[3.514879] (-) TimerEvent: {}
+[3.615266] (-) TimerEvent: {}
+[3.715663] (-) TimerEvent: {}
+[3.747098] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.815761] (-) TimerEvent: {}
+[3.916084] (-) TimerEvent: {}
+[4.016429] (-) TimerEvent: {}
+[4.116873] (-) TimerEvent: {}
+[4.217284] (-) TimerEvent: {}
+[4.305361] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.310696] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.317356] (-) TimerEvent: {}
+[4.417708] (-) TimerEvent: {}
+[4.518230] (-) TimerEvent: {}
+[4.596028] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.618338] (-) TimerEvent: {}
+[4.718679] (-) TimerEvent: {}
+[4.819021] (-) TimerEvent: {}
+[4.919532] (-) TimerEvent: {}
+[5.019974] (-) TimerEvent: {}
+[5.120524] (-) TimerEvent: {}
+[5.220896] (-) TimerEvent: {}
+[5.321445] (-) TimerEvent: {}
+[5.421805] (-) TimerEvent: {}
+[5.522138] (-) TimerEvent: {}
+[5.565605] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.622280] (-) TimerEvent: {}
+[5.656899] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Configuring done (5.6s)\n'}
+[5.722398] (-) TimerEvent: {}
+[5.723012] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.751762] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces\n'}
+[5.774142] (dynamixel_sdk_custom_interfaces) CommandEnded: {'returncode': 0}
+[5.775410] (dynamixel_sdk_custom_interfaces) JobProgress: {'identifier': 'dynamixel_sdk_custom_interfaces', 'progress': 'build'}
+[5.777129] (dynamixel_sdk_custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[5.822582] (-) TimerEvent: {}
+[5.888833] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.910410] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_dynamixel_sdk_custom_interfaces\n'}
+[5.922774] (-) TimerEvent: {}
+[6.026627] (-) TimerEvent: {}
+[6.127032] (-) TimerEvent: {}
+[6.228413] (-) TimerEvent: {}
+[6.329343] (-) TimerEvent: {}
+[6.429966] (-) TimerEvent: {}
+[6.445925] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[6.447626] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'creating dynamixel_sdk_custom_interfaces.egg-info\n'}
+[6.483517] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'writing dynamixel_sdk_custom_interfaces.egg-info/PKG-INFO\n'}
+[6.483936] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'writing dependency_links to dynamixel_sdk_custom_interfaces.egg-info/dependency_links.txt\n'}
+[6.484235] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'writing top-level names to dynamixel_sdk_custom_interfaces.egg-info/top_level.txt\n'}
+[6.484461] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'\n"}
+[6.529022] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  2%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_type_description\n'}
+[6.530041] (-) TimerEvent: {}
+[6.568238] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.596718] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.605899] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"reading manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'\n"}
+[6.606830] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'\n"}
+[6.630921] (-) TimerEvent: {}
+[6.734436] (-) TimerEvent: {}
+[6.782701] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg\n'}
+[6.834584] (-) TimerEvent: {}
+[6.938968] (-) TimerEvent: {}
+[7.039375] (-) TimerEvent: {}
+[7.139733] (-) TimerEvent: {}
+[7.240378] (-) TimerEvent: {}
+[7.343099] (-) TimerEvent: {}
+[7.446576] (-) TimerEvent: {}
+[7.503340] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  6%] Built target dynamixel_sdk_custom_interfaces__cpp\n'}
+[7.541084] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__description.c.o\x1b[0m\n'}
+[7.541426] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o\x1b[0m\n'}
+[7.543056] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c.o\x1b[0m\n'}
+[7.545258] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c.o\x1b[0m\n'}
+[7.546666] (-) TimerEvent: {}
+[7.648118] (-) TimerEvent: {}
+[7.654973] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c.o\x1b[0m\n'}
+[7.700989] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o\x1b[0m\n'}
+[7.748290] (-) TimerEvent: {}
+[7.847480] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[7.848343] (-) TimerEvent: {}
+[7.930524] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 22%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c\n'}
+[7.948625] (-) TimerEvent: {}
+[7.970337] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.971007] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.975023] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.980963] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.051316] (-) TimerEvent: {}
+[8.151856] (-) TimerEvent: {}
+[8.252537] (-) TimerEvent: {}
+[8.353281] (-) TimerEvent: {}
+[8.454254] (-) TimerEvent: {}
+[8.555282] (-) TimerEvent: {}
+[8.655724] (-) TimerEvent: {}
+[8.758337] (-) TimerEvent: {}
+[8.810055] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o\x1b[0m\n'}
+[8.860516] (-) TimerEvent: {}
+[8.947117] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o\x1b[0m\n'}
+[8.960670] (-) TimerEvent: {}
+[9.022268] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support_c.cpp.o\x1b[0m\n'}
+[9.054433] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o\x1b[0m\n'}
+[9.057651] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/set_position__type_support.cpp.o\x1b[0m\n'}
+[9.061142] (-) TimerEvent: {}
+[9.165890] (-) TimerEvent: {}
+[9.266078] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.266632] (-) TimerEvent: {}
+[9.370451] (-) TimerEvent: {}
+[9.393706] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 45%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[9.429801] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.473277] (-) TimerEvent: {}
+[9.573932] (-) TimerEvent: {}
+[9.674420] (-) TimerEvent: {}
+[9.774857] (-) TimerEvent: {}
+[9.878599] (-) TimerEvent: {}
+[9.979484] (-) TimerEvent: {}
+[10.080247] (-) TimerEvent: {}
+[10.180963] (-) TimerEvent: {}
+[10.285418] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[10.286141] (-) TimerEvent: {}
+[10.390321] (-) TimerEvent: {}
+[10.477540] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o\x1b[0m\n'}
+[10.490508] (-) TimerEvent: {}
+[10.594615] (-) TimerEvent: {}
+[10.681309] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[10.695286] (-) TimerEvent: {}
+[10.799590] (-) TimerEvent: {}
+[10.880332] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.899756] (-) TimerEvent: {}
+[11.000429] (-) TimerEvent: {}
+[11.029136] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 56%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c\n'}
+[11.066736] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[11.096344] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support_c.cpp.o\x1b[0m\n'}
+[11.103060] (-) TimerEvent: {}
+[11.153025] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o\x1b[0m\n'}
+[11.204981] (-) TimerEvent: {}
+[11.305855] (-) TimerEvent: {}
+[11.407318] (-) TimerEvent: {}
+[11.510750] (-) TimerEvent: {}
+[11.611266] (-) TimerEvent: {}
+[11.711700] (-) TimerEvent: {}
+[11.813278] (-) TimerEvent: {}
+[11.914226] (-) TimerEvent: {}
+[12.018311] (-) TimerEvent: {}
+[12.118977] (-) TimerEvent: {}
+[12.147537] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.221338] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp.o\x1b[0m\n'}
+[12.221904] (-) TimerEvent: {}
+[12.327252] (-) TimerEvent: {}
+[12.427682] (-) TimerEvent: {}
+[12.509055] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 68%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp\n'}
+[12.528476] (-) TimerEvent: {}
+[12.544783] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp.o\x1b[0m\n'}
+[12.628597] (-) TimerEvent: {}
+[12.730323] (-) TimerEvent: {}
+[12.833331] (-) TimerEvent: {}
+[12.933993] (-) TimerEvent: {}
+[13.036352] (-) TimerEvent: {}
+[13.137622] (-) TimerEvent: {}
+[13.235309] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[13.240425] (-) TimerEvent: {}
+[13.340929] (-) TimerEvent: {}
+[13.441546] (-) TimerEvent: {}
+[13.467723] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 72%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[13.541677] (-) TimerEvent: {}
+[13.602285] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.641883] (-) TimerEvent: {}
+[13.742579] (-) TimerEvent: {}
+[13.826507] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 75%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[13.842684] (-) TimerEvent: {}
+[13.943085] (-) TimerEvent: {}
+[13.975157] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[14.043374] (-) TimerEvent: {}
+[14.144331] (-) TimerEvent: {}
+[14.173711] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 77%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[14.221663] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 77%] Built target dynamixel_sdk_custom_interfaces\n'}
+[14.244452] (-) TimerEvent: {}
+[14.269149] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[14.344561] (-) TimerEvent: {}
+[14.445176] (-) TimerEvent: {}
+[14.545586] (-) TimerEvent: {}
+[14.645971] (-) TimerEvent: {}
+[14.746496] (-) TimerEvent: {}
+[14.849479] (-) TimerEvent: {}
+[14.949881] (-) TimerEvent: {}
+[15.050379] (-) TimerEvent: {}
+[15.066494] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 79%] Built target dynamixel_sdk_custom_interfaces__py\n'}
+[15.111820] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c.o\x1b[0m\n'}
+[15.112217] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c.o\x1b[0m\n'}
+[15.150545] (-) TimerEvent: {}
+[15.251082] (-) TimerEvent: {}
+[15.351714] (-) TimerEvent: {}
+[15.452407] (-) TimerEvent: {}
+[15.480377] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[15.552522] (-) TimerEvent: {}
+[15.577195] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 86%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_py\n'}
+[15.625308] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[15.625659] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[15.625808] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[15.652711] (-) TimerEvent: {}
+[15.756711] (-) TimerEvent: {}
+[15.857400] (-) TimerEvent: {}
+[15.920130] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[15.920808] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.924295] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[15.957589] (-) TimerEvent: {}
+[16.004491] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c\n'}
+[16.008781] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[16.016662] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[16.046355] (dynamixel_sdk_custom_interfaces) CommandEnded: {'returncode': 0}
+[16.047332] (dynamixel_sdk_custom_interfaces) JobProgress: {'identifier': 'dynamixel_sdk_custom_interfaces', 'progress': 'install'}
+[16.048702] (dynamixel_sdk_custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[16.057742] (-) TimerEvent: {}
+[16.073361] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.074662] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.075480] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_custom_interfaces\n'}
+[16.096759] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.json\n'}
+[16.119039] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.json\n'}
+[16.137631] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h\n'}
+[16.157876] (-) TimerEvent: {}
+[16.158783] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h\n'}
+[16.185341] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.h\n'}
+[16.206566] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.227452] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.h\n'}
+[16.243401] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.h\n'}
+[16.258046] (-) TimerEvent: {}
+[16.268030] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h\n'}
+[16.291963] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h\n'}
+[16.312944] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.h\n'}
+[16.332231] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.sh\n'}
+[16.348496] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.dsv\n'}
+[16.358225] (-) TimerEvent: {}
+[16.378704] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_c.h\n'}
+[16.399359] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.417279] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h\n'}
+[16.438997] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp\n'}
+[16.458398] (-) TimerEvent: {}
+[16.463495] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp\n'}
+[16.485721] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp\n'}
+[16.509417] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp\n'}
+[16.527719] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[16.547343] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.hpp\n'}
+[16.558491] (-) TimerEvent: {}
+[16.569921] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__builder.hpp\n'}
+[16.591443] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.hpp\n'}
+[16.612991] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__traits.hpp\n'}
+[16.634109] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.hpp\n'}
+[16.652360] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.hpp\n'}
+[16.658594] (-) TimerEvent: {}
+[16.679158] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.701048] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.722527] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.743669] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_c.h\n'}
+[16.758711] (-) TimerEvent: {}
+[16.765821] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.788783] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_c.h\n'}
+[16.811288] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.830413] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.849592] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.sh\n'}
+[16.858835] (-) TimerEvent: {}
+[16.877928] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.dsv\n'}
+[16.898294] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/PKG-INFO\n'}
+[16.920369] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/SOURCES.txt\n'}
+[16.937644] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/dependency_links.txt\n'}
+[16.954486] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/top_level.txt\n'}
+[16.958952] (-) TimerEvent: {}
+[16.985605] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/__init__.py\n'}
+[17.008862] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[17.029013] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.045412] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.059047] (-) TimerEvent: {}
+[17.066868] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so\n'}
+[17.090938] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.112450] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[17.134435] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py\n'}
+[17.155568] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py\n'}
+[17.159130] (-) TimerEvent: {}
+[17.179145] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c\n'}
+[17.200025] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py\n'}
+[17.218096] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py\n'}
+[17.238902] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c\n'}
+[17.256815] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.257148] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[17.257551] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so\n'}
+[17.257743] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl\n'}
+[17.259195] (-) TimerEvent: {}
+[17.284633] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl\n'}
+[17.306948] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg\n'}
+[17.328576] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv\n'}
+[17.348589] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces\n'}
+[17.359319] (-) TimerEvent: {}
+[17.371794] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_custom_interfaces\n'}
+[17.394025] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.sh\n'}
+[17.415788] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[17.437697] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.sh\n'}
+[17.455200] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.dsv\n'}
+[17.459401] (-) TimerEvent: {}
+[17.481935] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.bash\n'}
+[17.504731] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.sh\n'}
+[17.525859] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.zsh\n'}
+[17.544257] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.dsv\n'}
+[17.559528] (-) TimerEvent: {}
+[17.570980] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv\n'}
+[17.591555] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/packages/dynamixel_sdk_custom_interfaces\n'}
+[17.613117] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[17.633493] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.649731] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.659664] (-) TimerEvent: {}
+[17.677867] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.699101] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.720950] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.739008] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.756028] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig.cmake\n'}
+[17.759754] (-) TimerEvent: {}
+[17.786969] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig-version.cmake\n'}
+[17.807396] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.xml\n'}
+[17.826893] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so\n'}
+[17.827704] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so" to ""\n'}
+[17.827904] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[17.828637] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.828863] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.829836] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.830577] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[17.830771] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.830913] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so\n'}
+[17.831652] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[17.831864] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[17.832656] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.832916] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so\n'}
+[17.833601] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[17.859884] (-) TimerEvent: {}
+[17.919175] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Listing '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces'...\n"}
+[17.919528] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Compiling '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/__init__.py'...\n"}
+[17.919697] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Listing '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/msg'...\n"}
+[17.919893] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Compiling '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py'...\n"}
+[17.920048] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Compiling '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py'...\n"}
+[17.920224] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Listing '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/srv'...\n"}
+[17.920383] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Compiling '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py'...\n"}
+[17.920522] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"Compiling '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py'...\n"}
+[17.937064] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so\n'}
+[17.938289] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so" to ""\n'}
+[17.938594] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[17.938809] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.939081] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.939409] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.939654] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[17.939922] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.940169] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.940428] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.940678] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.940932] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[17.941192] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.941477] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.941714] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.941971] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[17.942255] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.942518] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[17.942757] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.946683] (dynamixel_sdk_custom_interfaces) CommandEnded: {'returncode': 0}
+[17.960008] (-) TimerEvent: {}
+[17.980289] (dynamixel_sdk_custom_interfaces) JobEnded: {'identifier': 'dynamixel_sdk_custom_interfaces', 'rc': 0}
+[17.982722] (dynamixel_sdk_examples) JobStarted: {'identifier': 'dynamixel_sdk_examples'}
+[18.016319] (dynamixel_sdk_examples) JobProgress: {'identifier': 'dynamixel_sdk_examples', 'progress': 'cmake'}
+[18.017696] (dynamixel_sdk_examples) Command: {'cmd': ['/usr/bin/cmake', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src/DynamixelSDK/dynamixel_sdk_examples', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk:/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[18.060173] (-) TimerEvent: {}
+[18.160612] (-) TimerEvent: {}
+[18.161515] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[18.260827] (-) TimerEvent: {}
+[18.298594] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[18.332948] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[18.360932] (-) TimerEvent: {}
+[18.461365] (-) TimerEvent: {}
+[18.538341] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[18.554991] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[18.556857] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[18.557799] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[18.561437] (-) TimerEvent: {}
+[18.581247] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[18.661568] (-) TimerEvent: {}
+[18.761945] (-) TimerEvent: {}
+[18.815359] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[18.831402] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[18.832613] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[18.833270] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[18.836742] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[18.862067] (-) TimerEvent: {}
+[18.962456] (-) TimerEvent: {}
+[19.062912] (-) TimerEvent: {}
+[19.114826] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[19.163009] (-) TimerEvent: {}
+[19.263447] (-) TimerEvent: {}
+[19.292978] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.324984] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found dynamixel_sdk: 3.7.60 (/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)\n'}
+[19.327921] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found dynamixel_sdk_custom_interfaces: 3.7.60 (/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake)\n'}
+[19.363562] (-) TimerEvent: {}
+[19.389569] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[19.411552] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[19.438880] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[19.463677] (-) TimerEvent: {}
+[19.468359] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[19.554150] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[19.563768] (-) TimerEvent: {}
+[19.648859] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[19.654459] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[19.663861] (-) TimerEvent: {}
+[19.764241] (-) TimerEvent: {}
+[19.841688] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[19.864373] (-) TimerEvent: {}
+[19.883238] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[19.927658] (dynamixel_sdk_examples) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[19.964567] (-) TimerEvent: {}
+[20.065579] (-) TimerEvent: {}
+[20.090828] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[20.165726] (-) TimerEvent: {}
+[20.266151] (-) TimerEvent: {}
+[20.349450] (dynamixel_sdk_examples) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[20.351655] (dynamixel_sdk_examples) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[20.352069] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src/DynamixelSDK/dynamixel_sdk_examples/include\n'}
+[20.352214] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[20.354241] (dynamixel_sdk_examples) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[20.354569] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[20.356123] (dynamixel_sdk_examples) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[20.358131] (dynamixel_sdk_examples) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[20.358277] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[20.359239] (dynamixel_sdk_examples) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[20.361877] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Configuring done (2.3s)\n'}
+[20.366215] (-) TimerEvent: {}
+[20.391288] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[20.400562] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Build files have been written to: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples\n'}
+[20.430246] (dynamixel_sdk_examples) CommandEnded: {'returncode': 0}
+[20.431466] (dynamixel_sdk_examples) JobProgress: {'identifier': 'dynamixel_sdk_examples', 'progress': 'build'}
+[20.432062] (dynamixel_sdk_examples) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples', '--', '-j4', '-l4'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk:/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[20.466344] (-) TimerEvent: {}
+[20.550040] (dynamixel_sdk_examples) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o\x1b[0m\n'}
+[20.566473] (-) TimerEvent: {}
+[20.666932] (-) TimerEvent: {}
+[20.767482] (-) TimerEvent: {}
+[20.867997] (-) TimerEvent: {}
+[20.970472] (-) TimerEvent: {}
+[21.070959] (-) TimerEvent: {}
+[21.171539] (-) TimerEvent: {}
+[21.272118] (-) TimerEvent: {}
+[21.372697] (-) TimerEvent: {}
+[21.473078] (-) TimerEvent: {}
+[21.573518] (-) TimerEvent: {}
+[21.673881] (-) TimerEvent: {}
+[21.774259] (-) TimerEvent: {}
+[21.874635] (-) TimerEvent: {}
+[21.975017] (-) TimerEvent: {}
+[22.075396] (-) TimerEvent: {}
+[22.175772] (-) TimerEvent: {}
+[22.276183] (-) TimerEvent: {}
+[22.376587] (-) TimerEvent: {}
+[22.476968] (-) TimerEvent: {}
+[22.577409] (-) TimerEvent: {}
+[22.677856] (-) TimerEvent: {}
+[22.778383] (-) TimerEvent: {}
+[22.878791] (-) TimerEvent: {}
+[22.979231] (-) TimerEvent: {}
+[23.079774] (-) TimerEvent: {}
+[23.180235] (-) TimerEvent: {}
+[23.280746] (-) TimerEvent: {}
+[23.381110] (-) TimerEvent: {}
+[23.481506] (-) TimerEvent: {}
+[23.581884] (-) TimerEvent: {}
+[23.682300] (-) TimerEvent: {}
+[23.782747] (-) TimerEvent: {}
+[23.883259] (-) TimerEvent: {}
+[23.983624] (-) TimerEvent: {}
+[24.084034] (-) TimerEvent: {}
+[24.184755] (-) TimerEvent: {}
+[24.285131] (-) TimerEvent: {}
+[24.385529] (-) TimerEvent: {}
+[24.488509] (-) TimerEvent: {}
+[24.589122] (-) TimerEvent: {}
+[24.689643] (-) TimerEvent: {}
+[24.789999] (-) TimerEvent: {}
+[24.890436] (-) TimerEvent: {}
+[24.991014] (-) TimerEvent: {}
+[25.091572] (-) TimerEvent: {}
+[25.192089] (-) TimerEvent: {}
+[25.292630] (-) TimerEvent: {}
+[25.392994] (-) TimerEvent: {}
+[25.493397] (-) TimerEvent: {}
+[25.593803] (-) TimerEvent: {}
+[25.694346] (-) TimerEvent: {}
+[25.794840] (-) TimerEvent: {}
+[25.898456] (-) TimerEvent: {}
+[25.998868] (-) TimerEvent: {}
+[26.099759] (-) TimerEvent: {}
+[26.202534] (-) TimerEvent: {}
+[26.303127] (-) TimerEvent: {}
+[26.404562] (-) TimerEvent: {}
+[26.504994] (-) TimerEvent: {}
+[26.605517] (-) TimerEvent: {}
+[26.705884] (-) TimerEvent: {}
+[26.806234] (-) TimerEvent: {}
+[26.906581] (-) TimerEvent: {}
+[27.006934] (-) TimerEvent: {}
+[27.107368] (-) TimerEvent: {}
+[27.207877] (-) TimerEvent: {}
+[27.308247] (-) TimerEvent: {}
+[27.408634] (-) TimerEvent: {}
+[27.508999] (-) TimerEvent: {}
+[27.609389] (-) TimerEvent: {}
+[27.709815] (-) TimerEvent: {}
+[27.810588] (-) TimerEvent: {}
+[27.911115] (-) TimerEvent: {}
+[28.011525] (-) TimerEvent: {}
+[28.111940] (-) TimerEvent: {}
+[28.212502] (-) TimerEvent: {}
+[28.312872] (-) TimerEvent: {}
+[28.413243] (-) TimerEvent: {}
+[28.513687] (-) TimerEvent: {}
+[28.614226] (-) TimerEvent: {}
+[28.714588] (-) TimerEvent: {}
+[28.815042] (-) TimerEvent: {}
+[28.915668] (-) TimerEvent: {}
+[29.016023] (-) TimerEvent: {}
+[29.116502] (-) TimerEvent: {}
+[29.216931] (-) TimerEvent: {}
+[29.318584] (-) TimerEvent: {}
+[29.419054] (-) TimerEvent: {}
+[29.519442] (-) TimerEvent: {}
+[29.619813] (-) TimerEvent: {}
+[29.720250] (-) TimerEvent: {}
+[29.822637] (-) TimerEvent: {}
+[29.923243] (-) TimerEvent: {}
+[30.023758] (-) TimerEvent: {}
+[30.124121] (-) TimerEvent: {}
+[30.224567] (-) TimerEvent: {}
+[30.325132] (-) TimerEvent: {}
+[30.425743] (-) TimerEvent: {}
+[30.526346] (-) TimerEvent: {}
+[30.626718] (-) TimerEvent: {}
+[30.727067] (-) TimerEvent: {}
+[30.827450] (-) TimerEvent: {}
+[30.927881] (-) TimerEvent: {}
+[31.028548] (-) TimerEvent: {}
+[31.128920] (-) TimerEvent: {}
+[31.229313] (-) TimerEvent: {}
+[31.329703] (-) TimerEvent: {}
+[31.430180] (-) TimerEvent: {}
+[31.530552] (-) TimerEvent: {}
+[31.630976] (-) TimerEvent: {}
+[31.731510] (-) TimerEvent: {}
+[31.831881] (-) TimerEvent: {}
+[31.932320] (-) TimerEvent: {}
+[32.032826] (-) TimerEvent: {}
+[32.133269] (-) TimerEvent: {}
+[32.233790] (-) TimerEvent: {}
+[32.334275] (-) TimerEvent: {}
+[32.434801] (-) TimerEvent: {}
+[32.535212] (-) TimerEvent: {}
+[32.635741] (-) TimerEvent: {}
+[32.736313] (-) TimerEvent: {}
+[32.836853] (-) TimerEvent: {}
+[32.937246] (-) TimerEvent: {}
+[33.037735] (-) TimerEvent: {}
+[33.138325] (-) TimerEvent: {}
+[33.238671] (-) TimerEvent: {}
+[33.339027] (-) TimerEvent: {}
+[33.439405] (-) TimerEvent: {}
+[33.539767] (-) TimerEvent: {}
+[33.640194] (-) TimerEvent: {}
+[33.740599] (-) TimerEvent: {}
+[33.840989] (-) TimerEvent: {}
+[33.941391] (-) TimerEvent: {}
+[34.041747] (-) TimerEvent: {}
+[34.142114] (-) TimerEvent: {}
+[34.242586] (-) TimerEvent: {}
+[34.343122] (-) TimerEvent: {}
+[34.443586] (-) TimerEvent: {}
+[34.544114] (-) TimerEvent: {}
+[34.644533] (-) TimerEvent: {}
+[34.744911] (-) TimerEvent: {}
+[34.845299] (-) TimerEvent: {}
+[34.945814] (-) TimerEvent: {}
+[35.046251] (-) TimerEvent: {}
+[35.146812] (-) TimerEvent: {}
+[35.247351] (-) TimerEvent: {}
+[35.347728] (-) TimerEvent: {}
+[35.448146] (-) TimerEvent: {}
+[35.548549] (-) TimerEvent: {}
+[35.648905] (-) TimerEvent: {}
+[35.749323] (-) TimerEvent: {}
+[35.849833] (-) TimerEvent: {}
+[35.950203] (-) TimerEvent: {}
+[36.050568] (-) TimerEvent: {}
+[36.150978] (-) TimerEvent: {}
+[36.251360] (-) TimerEvent: {}
+[36.351741] (-) TimerEvent: {}
+[36.452154] (-) TimerEvent: {}
+[36.552678] (-) TimerEvent: {}
+[36.653072] (-) TimerEvent: {}
+[36.753459] (-) TimerEvent: {}
+[36.853848] (-) TimerEvent: {}
+[36.954256] (-) TimerEvent: {}
+[37.054610] (-) TimerEvent: {}
+[37.154997] (-) TimerEvent: {}
+[37.255579] (-) TimerEvent: {}
+[37.356145] (-) TimerEvent: {}
+[37.456557] (-) TimerEvent: {}
+[37.557142] (-) TimerEvent: {}
+[37.657649] (-) TimerEvent: {}
+[37.758902] (-) TimerEvent: {}
+[37.859518] (-) TimerEvent: {}
+[37.959934] (-) TimerEvent: {}
+[38.060381] (-) TimerEvent: {}
+[38.160824] (-) TimerEvent: {}
+[38.261346] (-) TimerEvent: {}
+[38.362005] (-) TimerEvent: {}
+[38.463003] (-) TimerEvent: {}
+[38.563501] (-) TimerEvent: {}
+[38.663969] (-) TimerEvent: {}
+[38.720387] (dynamixel_sdk_examples) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable read_write_node\x1b[0m\n'}
+[38.764222] (-) TimerEvent: {}
+[38.864975] (-) TimerEvent: {}
+[38.965612] (-) TimerEvent: {}
+[39.066379] (-) TimerEvent: {}
+[39.167090] (-) TimerEvent: {}
+[39.267872] (-) TimerEvent: {}
+[39.368555] (-) TimerEvent: {}
+[39.469192] (-) TimerEvent: {}
+[39.569634] (-) TimerEvent: {}
+[39.670138] (-) TimerEvent: {}
+[39.708582] (dynamixel_sdk_examples) StdoutLine: {'line': b'[100%] Built target read_write_node\n'}
+[39.734064] (dynamixel_sdk_examples) CommandEnded: {'returncode': 0}
+[39.735422] (dynamixel_sdk_examples) JobProgress: {'identifier': 'dynamixel_sdk_examples', 'progress': 'install'}
+[39.735961] (dynamixel_sdk_examples) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/youyandchlow', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ffa2a483_57ad_4699_8e40_d73c645342ec', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk:/opt/ros/humble:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.12/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces:/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/humble:/opt/ros/jazzy'}), 'shell': False}
+[39.755838] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[39.756851] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[39.757624] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_node\n'}
+[39.770329] (-) TimerEvent: {}
+[39.786121] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples\n'}
+[39.808457] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples\n'}
+[39.827183] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.sh\n'}
+[39.845853] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.dsv\n'}
+[39.868120] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.sh\n'}
+[39.870428] (-) TimerEvent: {}
+[39.898015] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.dsv\n'}
+[39.918595] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.bash\n'}
+[39.937153] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.sh\n'}
+[39.958832] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.zsh\n'}
+[39.970564] (-) TimerEvent: {}
+[39.985244] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.dsv\n'}
+[40.007803] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv\n'}
+[40.026114] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/ament_index/resource_index/packages/dynamixel_sdk_examples\n'}
+[40.048800] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig.cmake\n'}
+[40.068427] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig-version.cmake\n'}
+[40.070662] (-) TimerEvent: {}
+[40.096574] (dynamixel_sdk_examples) StdoutLine: {'line': b'-- Symlinking: /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.xml\n'}
+[40.121454] (dynamixel_sdk_examples) CommandEnded: {'returncode': 0}
+[40.142950] (dynamixel_sdk_examples) JobEnded: {'identifier': 'dynamixel_sdk_examples', 'rc': 0}
+[40.143976] (-) EventReactorShutdown: {}

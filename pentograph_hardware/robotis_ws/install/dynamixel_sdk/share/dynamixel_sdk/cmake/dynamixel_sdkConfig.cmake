@@ -1,0 +1,1 @@
+/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig.cmake
