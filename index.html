@@ -11,6 +11,7 @@
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
       <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
       <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=fdcf8bf8" />
 
   
@@ -22,6 +23,7 @@
       <script src="_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="_static/copybutton.js?v=30646c52"></script>
       <script src="_static/translations.js?v=e6b791cb"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -52,6 +54,8 @@
 <li class="toctree-l1"><a class="reference internal" href="c00_introduction/p00s00_index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c01_create_and_publish_doc/p01s00_index.html">Premier projet &amp; doc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s00_index.html">Tutoriel ROS2 épicé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c03_test_your_code/p03s00_index.html">Tester le code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c04_collaborate_with_coders/p04s00_index.html">Les outils nécessaires pour collaborer entre codeurs</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
 <ul>
@@ -121,11 +125,40 @@
 <li class="toctree-l1"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s00_index.html">Tutoriel ROS2 épicé</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s01_pimped_pubsub.html">Rappels : setup ROS2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s01_pimped_pubsub.html#premiers-pas-avec-le-package-scara-tutorial-ros2">Premiers pas avec le package scara_tutorial_ros2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s01_pimped_pubsub.html#extension-vscode-pour-ros2">Extension vscode pour ROS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s01_pimped_pubsub.html#creer-la-description-urdf-physique-d-un-robot">Créer la description URDF physique d’un robot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s01_pimped_pubsub.html#creer-un-projet-ros2-c-publisher-subscriber">Créer un projet ROS2 c++ publisher-subscriber</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="c02_first_ros2_project_pimped/p02s02_add_parameters.html">Utiliser la librairie generate_parameter_library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="c03_test_your_code/p03s00_index.html">Tester le code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c03_test_your_code/p03s01_run_ros2_tests.html">Lancer les tests de ROS2 et les analyser</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="c03_test_your_code/p03s01_run_ros2_tests.html#lancer-les-tests-sur-tous-les-paquets-du-repertoire-de-travail">Lancer les tests sur tous les paquets du répertoire de travail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c03_test_your_code/p03s01_run_ros2_tests.html#lancer-les-tests-pour-un-paquet-specifique">Lancer les tests pour un paquet spécifique</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c03_test_your_code/p03s01_run_ros2_tests.html#analyser-les-resultats-des-tests">Analyser les résultats des tests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="c04_collaborate_with_coders/p04s00_index.html">Les outils nécessaires pour collaborer entre codeurs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="c04_collaborate_with_coders/p04s01_format_your_code.html">Formater automatiquement le code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c04_collaborate_with_coders/p04s01_format_your_code.html#conventions-de-codage">Conventions de codage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c04_collaborate_with_coders/p04s02_format_rst.html">Formatter automatiquement la documentation RestructuredText (RST)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s02_format_rst.html#id1">restructuredtext-lint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s02_format_rst.html#id2">rstfmt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s02_format_rst.html#utilisation-dans-l-editeur-de-code">Utilisation dans l’éditeur de code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="c04_collaborate_with_coders/p04s10_precommit.html">L’outil pre-commit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s10_precommit.html#a-quoi-sert-l-outil-pre-commit">À quoi sert l’outil pre-commit ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s10_precommit.html#installation-de-pre-commit">Installation de pre-commit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s10_precommit.html#configuration-de-pre-commit">Configuration de pre-commit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s10_precommit.html#exemple-d-utilisation-pour-restructuredtext">Exemple d’utilisation pour restructuredtext</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c04_collaborate_with_coders/p04s10_precommit.html#commiter-en-urgence">Commiter en urgence</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -136,7 +169,13 @@
 <li class="toctree-l1"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index.html">Pantographe de dessin robotisé avec Raspberry Pi et ROS2</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s01_material_description.html">Description du matériel de la plateforme pantographe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s02_mechanical_description.html">Description mécanique de la plateforme pantographe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s03_urdf.html">Génération de la description URDF du pantographe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s03_urdf.html">Génération de la description URDF du pantographe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s03_urdf.html#extraction-des-modeles-3d-en-step">Extraction des modèles 3D en step</a></li>
+<li class="toctree-l3"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s03_urdf.html#conversion-des-modeles-3d-en-collada">Conversion des modèles 3D en collada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s03_urdf.html#creation-du-fichier-urdf">Création du fichier URDF</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index.html#description-du-projet">Description du projet</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="p01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index.html">Ubuntu &amp; RPi &amp; ROS2</a><ul>
