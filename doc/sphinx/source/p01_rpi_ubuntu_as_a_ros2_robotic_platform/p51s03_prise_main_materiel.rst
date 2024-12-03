@@ -2,8 +2,6 @@
 Prise en main du matériel
 ==========================
 
-COUCOU CECI EST UN TEST il demarre au hot de zeroth...
-
 1. Préparation du matériel
 ===========================
 
