@@ -28,8 +28,9 @@ Table des matières
    :maxdepth: 3
    :caption: Projet Youri et Chloé
 
-   a00_prise_en_main-matériel
-   a01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index
+   a00s01_prise_main_materiel
+   a00s02_dynamixel
+   a00s03_pentograph
 
 **************************
 Index, figures et tableaux
