@@ -28,9 +28,7 @@ Table des matières
    :maxdepth: 3
    :caption: Projet Youri et Chloé
 
-   a00s01_prise_main_materiel
-   a00s02_dynamixel
-   a00s03_pentograph
+   a00_projet_YouriChloe
 
 **************************
 Index, figures et tableaux
