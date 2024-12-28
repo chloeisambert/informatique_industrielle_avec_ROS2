@@ -24,6 +24,12 @@ Table des matières
    p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index
    p01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index
 
+.. toctree:: 
+   :maxdepth: 3
+   :caption: Projet Youri et Chloé
+
+   a00_prise_en_main-matériel
+   a01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index
 
 **************************
 Index, figures et tableaux

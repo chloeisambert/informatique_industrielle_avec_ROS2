@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prise en main du matériel &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fdcf8bf8" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=05dadb3a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=30646c52"></script>
+      <script src="../_static/translations.js?v=e6b791cb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Cours d'Informatique Industrielle avec ROS2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Informatique Industrielle &amp; ROS2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../c00_introduction/p00s00_index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c01_create_and_publish_doc/p01s00_index.html">Premier projet &amp; doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c02_first_ros2_project_pimped/p02s00_index.html">Tutoriel ROS2 épicé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c03_test_your_code/p03s00_index.html">Tester le code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c04_collaborate_with_coders/p04s00_index.html">Les outils nécessaires pour collaborer entre codeurs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index.html">Pantographe de dessin robotisé avec Raspberry Pi et ROS2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index.html">Ubuntu &amp; RPi &amp; ROS2</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Cours d'Informatique Industrielle avec ROS2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Prise en main du matériel</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/a00_projet_YouriChloe/a00s01_prise_main_materiel.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prise-en-main-du-materiel">
+<h1>Prise en main du matériel<a class="headerlink" href="#prise-en-main-du-materiel" title="Lien vers cette rubrique"></a></h1>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/raspberry.jpg"><img alt="a00_projet_YouriChloe/img/raspberry.jpg" src="a00_projet_YouriChloe/img/raspberry.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Carte Raspberry Pi 5</span><a class="headerlink" href="#id1" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/disquedur.jpg"><img alt="a00_projet_YouriChloe/img/disquedur.jpg" src="a00_projet_YouriChloe/img/disquedur.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Disque dur ADATA</span><a class="headerlink" href="#id2" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/NVMeBase.jpg"><img alt="a00_projet_YouriChloe/img/NVMeBase.jpg" src="a00_projet_YouriChloe/img/NVMeBase.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Carte base NVMe</span><a class="headerlink" href="#id3" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/radiateur.jpg"><img alt="a00_projet_YouriChloe/img/radiateur.jpg" src="a00_projet_YouriChloe/img/radiateur.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Radiateur pour Raspberry</span><a class="headerlink" href="#id4" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<section id="preparation-du-materiel">
+<h2>1. Préparation du matériel<a class="headerlink" href="#preparation-du-materiel" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p><strong>Installer le radiateur sur la Raspberry Pi :</strong>
+- Retirer le cache du connecteur JST avant installation.
+- Suivre les instructions fournies dans la <a class="reference external" href="https://datasheets.raspberrypi.com/cooling/raspberry-pi-active-cooler-product-brief.pdf">notice d’installation du radiateur</a>.</p></li>
+</ul>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/install_radiateur.jpg"><img alt="a00_projet_YouriChloe/img/install_radiateur.jpg" src="a00_projet_YouriChloe/img/install_radiateur.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Radiateur installé sur la Raspberry</span><a class="headerlink" href="#id5" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Installer le dissipateur thermique et le disque dur :</strong></dt><dd><ul>
+<li><p>Retirer l’opercule du dissipateur thermique (lame bleue) et le coller sur le disque dur.</p></li>
+<li><p>Insérer le disque dur dans l’encoche de la carte NVMe BASE Pimoroni (présence d’un détrompeur).</p></li>
+<li><p>Fixer avec une vis de référence (vis-écrou-disque dur-écrou).</p></li>
+<li><p>Installer les 4 entretoises sur la base.</p></li>
+<li><p>Connecter la base à la Raspberry Pi en respectant les sens de branchement.</p></li>
+<li><p>Positionner et visser la Raspberry sur la base.</p></li>
+<li><p>Référez-vous au <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">support du disque dur Pimoroni</a>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/install_dd.jpg"><img alt="a00_projet_YouriChloe/img/install_dd.jpg" src="a00_projet_YouriChloe/img/install_dd.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Installation du disque dur sur la base NVMe</span><a class="headerlink" href="#id6" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/assemblage_NVMe.jpg"><img alt="a00_projet_YouriChloe/img/assemblage_NVMe.jpg" src="a00_projet_YouriChloe/img/assemblage_NVMe.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Assemblage de la Raspberry et de la base NVMe</span><a class="headerlink" href="#id7" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="installer-l-os">
+<h2>2. Installer l’OS<a class="headerlink" href="#installer-l-os" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Préparation initiale :</strong></dt><dd><ul>
+<li><p>Insérer la carte SD contenant Raspbian dans la Raspberry Pi.</p></li>
+<li><p>Brancher le câble HDMI et l’alimentation, ainsi qu’un clavier et une souris en USB.</p></li>
+<li><p>Si la carte SD est utilisée pour la première fois :
+- Configurer les paramètres (langue : français, etc.).
+- Identifiants par défaut : username : <cite>pi</cite>, password : <cite>pi</cite>.
+- Configurer un partage de connexion avec un téléphone pour accéder à Internet.
+- Définir Firefox comme navigateur par défaut, mettre à jour, puis redémarrer.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/branchement_rasp.jpg"><img alt="a00_projet_YouriChloe/img/branchement_rasp.jpg" src="a00_projet_YouriChloe/img/branchement_rasp.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Branchements de la Raspberry</span><a class="headerlink" href="#id8" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<ul>
+<li><p><strong>Installation du système sur le disque NVMe :</strong>
+- Ouvrir un terminal et suivre la section <em>« Installing your OS onto the NVMe SSD »</em> dans le <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">guide de support Pimoroni</a>.
+- À l’étape <em>« OS Installation Options »</em>, utiliser l’option 1 : <em>Install a new OS using Raspberry Pi OS Desktop</em> avec Raspberry Pi Imager.</p></li>
+<li><p><strong>Partitionnement du disque dur :</strong>
+- Installer l’outil GParted : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gparted</span></code>.
+- Ouvrir GParted (Menu -&gt; Outil système).
+- Sélectionner en haut à droite : <cite>/dev/nvme0n1</cite>.
+- Créez une table de partition (type : msdos).
+- Définir une nouvelle partition :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Taille : 122000 (la moitié du disque).</p></li>
+<li><p>Étiquette : nom personnalisé.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Appliquer toutes les modifications (bouton check vert).</p></li>
+<li><p>Fermer GParted.</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="a00_projet_YouriChloe/img/separation_dd.jpg"><img alt="a00_projet_YouriChloe/img/separation_dd.jpg" src="a00_projet_YouriChloe/img/separation_dd.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Interface de GParted</span><a class="headerlink" href="#id9" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<ul>
+<li><p><strong>Installer Ubuntu LTS 24.04 :</strong>
+- Utiliser l’Imager pour sélectionner :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Modèle : Raspberry Pi 5.</p></li>
+<li><p>Système d’exploitation : Ubuntu LTS 24.04 Desktop.</p></li>
+<li><p>Stockage : choisir le groupe créé lors du partitionnement.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Confirmer les messages d’avertissement (perte de données) et définir un mot de passe.</p></li>
+<li><p>Consulter la <a class="reference external" href="https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#2-prepare-the-sd-card">documentation officielle Ubuntu</a> pour plus de détails.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="outils">
+<h2>3. Outils<a class="headerlink" href="#outils" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p><strong>Sécurité :</strong>
+- Pour éviter tout risque d’électrisation, toucher la masse des tables de travail pour se décharger.</p></li>
+<li><p><strong>Captures d’écran :</strong>
+- Utiliser le logiciel Shutter : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">shutter</span></code>.</p></li>
+</ul>
+</section>
+<section id="utilisation-de-github">
+<h2>4. Utilisation de GitHub<a class="headerlink" href="#utilisation-de-github" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Après avoir créé le dépôt, visualisez la documentation via :
+- Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.
+- Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
+<li><p>Pour mettre à jour un fork déjà réalisé :
+- Vérifier si il y a un upstream -&gt; git remote -v
+- Si aucun upstream est présent, il faut le créer : git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:yguel/informatique_industrielle_avec_ROS2.git
+- Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream
+- Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -&gt; git rebase upstream/rolling
+- Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Manuel YGUEL.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
