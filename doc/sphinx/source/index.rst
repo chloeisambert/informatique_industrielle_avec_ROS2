@@ -28,7 +28,8 @@ Table des matières
    :maxdepth: 3
    :caption: Projet Youri et Chloé
 
-   a00_projet_YouriChloe
+   a00_projet_YouriChloe/a00s00_index
+
 
 **************************
 Index, figures et tableaux
