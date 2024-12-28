@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_examples/read_write_node" "TARGETS" "read_write_node" "DESTINATION" "lib/dynamixel_sdk_examples")

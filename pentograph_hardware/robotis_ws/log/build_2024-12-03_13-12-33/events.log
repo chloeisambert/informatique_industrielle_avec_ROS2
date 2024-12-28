@@ -1,0 +1,211 @@
+[0.000000] (-) TimerEvent: {}
+[0.000366] (dynamixel_sdk) JobQueued: {'identifier': 'dynamixel_sdk', 'dependencies': OrderedDict()}
+[0.000712] (dynamixel_sdk_custom_interfaces) JobQueued: {'identifier': 'dynamixel_sdk_custom_interfaces', 'dependencies': OrderedDict()}
+[0.001449] (dynamixel_sdk_examples) JobQueued: {'identifier': 'dynamixel_sdk_examples', 'dependencies': OrderedDict({'dynamixel_sdk': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk', 'dynamixel_sdk_custom_interfaces': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces'})}
+[0.003414] (dynamixel_sdk) JobStarted: {'identifier': 'dynamixel_sdk'}
+[0.013983] (dynamixel_sdk_custom_interfaces) JobStarted: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.028055] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'cmake'}
+[0.031341] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src/DynamixelSDK/dynamixel_sdk', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'HOME': '/home/youyandchlow', 'OLDPWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6fcc044a_ca87_49c0_855a_ff10e7848b51', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/humble:'}), 'shell': False}
+[0.046299] (dynamixel_sdk_custom_interfaces) JobProgress: {'identifier': 'dynamixel_sdk_custom_interfaces', 'progress': 'cmake'}
+[0.052116] (dynamixel_sdk_custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces'], 'cwd': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youyandchlow', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'HOME': '/home/youyandchlow', 'OLDPWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2348', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'youyandchlow', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youyandchlow', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rpi2:@/tmp/.ICE-unix/2319,unix/rpi2:/tmp/.ICE-unix/2319', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6fcc044a_ca87_49c0_855a_ff10e7848b51', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/.mutter-Xwaylandauth.TYITX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/humble:'}), 'shell': False}
+[0.080942] (dynamixel_sdk) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.085069] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099824] (-) TimerEvent: {}
+[0.200484] (-) TimerEvent: {}
+[0.301277] (-) TimerEvent: {}
+[0.344505] (dynamixel_sdk) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.351957] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.401433] (-) TimerEvent: {}
+[0.502206] (-) TimerEvent: {}
+[0.604862] (-) TimerEvent: {}
+[0.705764] (-) TimerEvent: {}
+[0.807414] (-) TimerEvent: {}
+[0.908226] (-) TimerEvent: {}
+[1.008792] (-) TimerEvent: {}
+[1.109265] (-) TimerEvent: {}
+[1.209811] (-) TimerEvent: {}
+[1.310284] (-) TimerEvent: {}
+[1.410775] (-) TimerEvent: {}
+[1.511195] (-) TimerEvent: {}
+[1.611729] (-) TimerEvent: {}
+[1.712333] (-) TimerEvent: {}
+[1.817791] (-) TimerEvent: {}
+[1.925129] (-) TimerEvent: {}
+[2.028153] (-) TimerEvent: {}
+[2.130645] (-) TimerEvent: {}
+[2.234100] (-) TimerEvent: {}
+[2.337110] (-) TimerEvent: {}
+[2.439076] (-) TimerEvent: {}
+[2.544069] (-) TimerEvent: {}
+[2.648990] (-) TimerEvent: {}
+[2.753691] (-) TimerEvent: {}
+[2.855657] (-) TimerEvent: {}
+[2.961665] (-) TimerEvent: {}
+[3.066888] (-) TimerEvent: {}
+[3.170513] (-) TimerEvent: {}
+[3.276094] (-) TimerEvent: {}
+[3.377437] (-) TimerEvent: {}
+[3.480632] (-) TimerEvent: {}
+[3.582814] (-) TimerEvent: {}
+[3.685561] (-) TimerEvent: {}
+[3.791094] (-) TimerEvent: {}
+[3.898603] (-) TimerEvent: {}
+[4.001881] (-) TimerEvent: {}
+[4.105157] (-) TimerEvent: {}
+[4.210971] (-) TimerEvent: {}
+[4.312042] (-) TimerEvent: {}
+[4.426998] (-) TimerEvent: {}
+[4.531003] (-) TimerEvent: {}
+[4.632411] (-) TimerEvent: {}
+[4.738769] (-) TimerEvent: {}
+[4.852176] (-) TimerEvent: {}
+[4.956288] (-) TimerEvent: {}
+[5.060674] (-) TimerEvent: {}
+[5.167865] (-) TimerEvent: {}
+[5.279182] (-) TimerEvent: {}
+[5.381154] (-) TimerEvent: {}
+[5.484958] (-) TimerEvent: {}
+[5.587001] (-) TimerEvent: {}
+[5.689180] (-) TimerEvent: {}
+[5.790836] (-) TimerEvent: {}
+[5.892907] (-) TimerEvent: {}
+[5.994973] (-) TimerEvent: {}
+[6.096445] (-) TimerEvent: {}
+[6.198393] (-) TimerEvent: {}
+[6.300453] (-) TimerEvent: {}
+[6.402455] (-) TimerEvent: {}
+[6.505371] (-) TimerEvent: {}
+[6.608860] (-) TimerEvent: {}
+[6.710597] (-) TimerEvent: {}
+[6.814184] (-) TimerEvent: {}
+[6.919871] (-) TimerEvent: {}
+[7.022142] (-) TimerEvent: {}
+[7.125006] (-) TimerEvent: {}
+[7.229489] (-) TimerEvent: {}
+[7.332922] (-) TimerEvent: {}
+[7.438947] (-) TimerEvent: {}
+[7.548500] (-) TimerEvent: {}
+[7.650224] (-) TimerEvent: {}
+[7.756762] (-) TimerEvent: {}
+[7.862145] (-) TimerEvent: {}
+[7.964106] (-) TimerEvent: {}
+[8.070012] (-) TimerEvent: {}
+[8.175211] (-) TimerEvent: {}
+[8.277190] (-) TimerEvent: {}
+[8.380292] (-) TimerEvent: {}
+[8.482976] (-) TimerEvent: {}
+[8.591492] (-) TimerEvent: {}
+[8.694170] (-) TimerEvent: {}
+[8.795806] (-) TimerEvent: {}
+[8.896898] (-) TimerEvent: {}
+[8.998072] (-) TimerEvent: {}
+[9.100166] (-) TimerEvent: {}
+[9.203590] (-) TimerEvent: {}
+[9.309521] (-) TimerEvent: {}
+[9.412766] (-) TimerEvent: {}
+[9.518093] (-) TimerEvent: {}
+[9.619468] (-) TimerEvent: {}
+[9.721780] (-) TimerEvent: {}
+[9.823065] (-) TimerEvent: {}
+[9.926366] (-) TimerEvent: {}
+[10.028271] (-) TimerEvent: {}
+[10.130928] (-) TimerEvent: {}
+[10.233265] (-) TimerEvent: {}
+[10.337529] (-) TimerEvent: {}
+[10.440686] (-) TimerEvent: {}
+[10.544830] (-) TimerEvent: {}
+[10.646549] (-) TimerEvent: {}
+[10.748265] (-) TimerEvent: {}
+[10.852112] (-) TimerEvent: {}
+[10.955884] (-) TimerEvent: {}
+[11.057767] (-) TimerEvent: {}
+[11.159912] (-) TimerEvent: {}
+[11.261586] (-) TimerEvent: {}
+[11.366480] (-) TimerEvent: {}
+[11.470609] (-) TimerEvent: {}
+[11.573621] (-) TimerEvent: {}
+[11.676073] (-) TimerEvent: {}
+[11.779192] (-) TimerEvent: {}
+[11.881123] (-) TimerEvent: {}
+[11.983054] (-) TimerEvent: {}
+[12.084479] (-) TimerEvent: {}
+[12.186649] (-) TimerEvent: {}
+[12.288003] (-) TimerEvent: {}
+[12.390265] (-) TimerEvent: {}
+[12.502581] (-) TimerEvent: {}
+[12.603629] (-) TimerEvent: {}
+[12.705789] (-) TimerEvent: {}
+[12.807496] (-) TimerEvent: {}
+[12.909498] (-) TimerEvent: {}
+[13.012836] (-) TimerEvent: {}
+[13.115019] (-) TimerEvent: {}
+[13.216247] (-) TimerEvent: {}
+[13.321358] (-) TimerEvent: {}
+[13.424471] (-) TimerEvent: {}
+[13.528621] (-) TimerEvent: {}
+[13.631193] (-) TimerEvent: {}
+[13.734921] (-) TimerEvent: {}
+[13.835793] (-) TimerEvent: {}
+[13.936768] (-) TimerEvent: {}
+[14.039172] (-) TimerEvent: {}
+[14.144578] (-) TimerEvent: {}
+[14.245848] (-) TimerEvent: {}
+[14.347189] (-) TimerEvent: {}
+[14.449580] (-) TimerEvent: {}
+[14.554482] (-) TimerEvent: {}
+[14.656075] (-) TimerEvent: {}
+[14.759070] (-) TimerEvent: {}
+[14.864222] (-) TimerEvent: {}
+[14.965568] (-) TimerEvent: {}
+[15.068085] (-) TimerEvent: {}
+[15.176140] (-) TimerEvent: {}
+[15.278942] (-) TimerEvent: {}
+[15.380363] (-) TimerEvent: {}
+[15.484643] (-) TimerEvent: {}
+[15.586417] (-) TimerEvent: {}
+[15.688306] (-) TimerEvent: {}
+[15.790568] (-) TimerEvent: {}
+[15.870013] (dynamixel_sdk) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.870550] (dynamixel_sdk) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[15.870679] (dynamixel_sdk) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[15.870834] (dynamixel_sdk) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[15.873497] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.874241] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[15.874554] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[15.874892] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[15.893220] (-) TimerEvent: {}
+[16.007830] (-) TimerEvent: {}
+[16.068773] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[16.070909] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[16.074947] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[16.075485] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_package_templates/templates.cmake)\n'}
+[16.075738] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  returned error code 1\n'}
+[16.075910] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[16.076043] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[16.076160] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[16.076281] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[16.076432] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'  CMakeLists.txt:14 (find_package)\n'}
+[16.076573] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\n'}
+[16.076751] (dynamixel_sdk_custom_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[16.082759] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[16.087595] (dynamixel_sdk) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[16.088379] (dynamixel_sdk) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[16.088576] (dynamixel_sdk) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[16.088689] (dynamixel_sdk) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[16.089042] (dynamixel_sdk) StderrLine: {'line': b'  /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk/ament_cmake_package_templates/templates.cmake)\n'}
+[16.089285] (dynamixel_sdk) StderrLine: {'line': b'  returned error code 1\n'}
+[16.089420] (dynamixel_sdk) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[16.089548] (dynamixel_sdk) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[16.089747] (dynamixel_sdk) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[16.089940] (dynamixel_sdk) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[16.090118] (dynamixel_sdk) StderrLine: {'line': b'  CMakeLists.txt:18 (find_package)\n'}
+[16.090352] (dynamixel_sdk) StderrLine: {'line': b'\n'}
+[16.090622] (dynamixel_sdk) StderrLine: {'line': b'\x1b[0m\n'}
+[16.105833] (dynamixel_sdk_custom_interfaces) CommandEnded: {'returncode': 1}
+[16.107974] (-) TimerEvent: {}
+[16.113430] (dynamixel_sdk) CommandEnded: {'returncode': 1}
+[16.197818] (dynamixel_sdk_custom_interfaces) JobEnded: {'identifier': 'dynamixel_sdk_custom_interfaces', 'rc': 1}
+[16.200480] (dynamixel_sdk) JobEnded: {'identifier': 'dynamixel_sdk', 'rc': 'SIGINT'}
+[16.209496] (-) TimerEvent: {}
+[16.215301] (dynamixel_sdk_examples) JobSkipped: {'identifier': 'dynamixel_sdk_examples'}
+[16.215516] (-) EventReactorShutdown: {}

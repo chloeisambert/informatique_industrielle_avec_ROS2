@@ -1,0 +1,22 @@
+[0.051s] Invoking command in '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces
+[0.078s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.972s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.070s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[1.073s]   By not providing "Findbuiltin_interfaces.cmake" in CMAKE_MODULE_PATH this
+[1.073s]   project has asked CMake to find a package configuration file provided by
+[1.073s]   "builtin_interfaces", but CMake did not find one.
+[1.073s] 
+[1.074s]   Could not find a package configuration file provided by
+[1.074s]   "builtin_interfaces" with any of the following names:
+[1.074s] 
+[1.074s]     builtin_interfacesConfig.cmake
+[1.074s]     builtin_interfaces-config.cmake
+[1.074s] 
+[1.075s]   Add the installation prefix of "builtin_interfaces" to CMAKE_PREFIX_PATH or
+[1.081s]   set "builtin_interfaces_DIR" to a directory containing one of the above
+[1.081s]   files.  If "builtin_interfaces" provides a separate development package or
+[1.081s]   SDK, be sure it has been installed.
+[1.081s] 
+[1.081s] [0m
+[1.081s] -- Configuring incomplete, errors occurred!
+[1.100s] Invoked command in '/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/build/dynamixel_sdk_custom_interfaces' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/youyandchlow/ros2_ws/src/informatique_industrielle_avec_ROS2/pentograph_hardware/robotis_ws/install/dynamixel_sdk_custom_interfaces
