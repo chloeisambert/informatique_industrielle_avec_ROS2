@@ -27,8 +27,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Premier pas avec les dynamixel" href="a00s02_dynamixel.html" />
-    <link rel="prev" title="Documentation du projet d’Informatique Industrielle - Youri et Chloé" href="a00s00_index.html" /> 
+    <link rel="next" title="Premier pas avec les Dynamixel" href="a00s02_dynamixel.html" />
+    <link rel="prev" title="Documentation du projet d’Informatique Industrielle" href="a00s00_index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -65,15 +65,15 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Projet Youri et Chloé</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle - Youri et Chloé</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Prise en main du matériel</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#preparation-du-materiel">1. Préparation du matériel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installer-l-os">2. Installer l’OS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#outils">3. Outils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#utilisation-de-github">4. Utilisation de GitHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installer-ros2">3. Installer ROS2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#outils">4. Outils</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="a00s02_dynamixel.html">Premier pas avec les dynamixel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a00s02_dynamixel.html">Premier pas avec les Dynamixel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a00s03_pentograph.html">Utilisation et commande du pantographe</a></li>
 </ul>
 </li>
@@ -93,7 +93,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="a00s00_index.html">Documentation du projet d’Informatique Industrielle - Youri et Chloé</a></li>
+          <li class="breadcrumb-item"><a href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a></li>
       <li class="breadcrumb-item active">Prise en main du matériel</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/a00_projet_YouriChloe/a00s01_prise_main_materiel.rst.txt" rel="nofollow"> Afficher la source de la page</a>
@@ -185,11 +185,16 @@
 <dt><strong>Préparation initiale :</strong></dt><dd><ul>
 <li><p>Insérer la carte SD contenant Raspbian dans la Raspberry Pi.</p></li>
 <li><p>Brancher le câble HDMI et l’alimentation, ainsi qu’un clavier et une souris en USB.</p></li>
-<li><p>Si la carte SD est utilisée pour la première fois :
-- Configurer les paramètres (langue : français, etc.).
-- Identifiants par défaut : username : <cite>pi</cite>, password : <cite>pi</cite>.
-- Configurer un partage de connexion avec un téléphone pour accéder à Internet.
-- Définir Firefox comme navigateur par défaut, mettre à jour, puis redémarrer.</p></li>
+<li><dl class="simple">
+<dt>Si la carte SD est utilisée pour la première fois :</dt><dd><ul>
+<li><p>Configurer les paramètres (langue : français, etc.).</p></li>
+<li><p>Identifiants par défaut : username : <cite>pi</cite>, password : <cite>pi</cite>.</p></li>
+<li><p>Configurer un partage de connexion avec un téléphone pour accéder à Internet.</p></li>
+<li><p>Définir Firefox comme navigateur par défaut, mettre à jour, puis redémarrer.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </dd>
 </dl>
@@ -202,26 +207,34 @@
 <p><span class="caption-text">Branchements de la Raspberry</span><a class="headerlink" href="#id8" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
-<ul>
-<li><p><strong>Installation du système sur le disque NVMe :</strong>
-- Ouvrir un terminal et suivre la section <em>« Installing your OS onto the NVMe SSD »</em> dans le <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">guide de support Pimoroni</a>.
-- À l’étape <em>« OS Installation Options »</em>, utiliser l’option 1 : <em>Install a new OS using Raspberry Pi OS Desktop</em> avec Raspberry Pi Imager.</p></li>
-<li><p><strong>Partitionnement du disque dur :</strong>
-- Installer l’outil GParted : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gparted</span></code>.
-- Ouvrir GParted (Menu -&gt; Outil système).
-- Sélectionner en haut à droite : <cite>/dev/nvme0n1</cite>.
-- Créez une table de partition (type : msdos).
-- Définir une nouvelle partition :</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Installation du système sur le disque NVMe :</strong></dt><dd><ul>
+<li><p>Ouvrir un terminal et suivre la section <em>« Installing your OS onto the NVMe SSD »</em> dans le <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">guide de support Pimoroni</a>.</p></li>
+<li><p>À l’étape <em>« OS Installation Options »</em>, utiliser l’option 1 : <em>Install a new OS using Raspberry Pi OS Desktop</em> avec Raspberry Pi Imager.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Partitionnement du disque dur :</strong></dt><dd><ul>
+<li><p>Installer l’outil GParted : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gparted</span></code>.</p></li>
+<li><p>Ouvrir GParted (Menu -&gt; Outil système).</p></li>
+<li><p>Sélectionner en haut à droite : <cite>/dev/nvme0n1</cite>.</p></li>
+<li><p>Créez une table de partition (type : msdos).</p></li>
+<li><dl class="simple">
+<dt>Définir une nouvelle partition :</dt><dd><ul>
 <li><p>Taille : 122000 (la moitié du disque).</p></li>
 <li><p>Étiquette : nom personnalisé.</p></li>
 </ul>
-</div></blockquote>
-<ul class="simple">
+</dd>
+</dl>
+</li>
 <li><p>Appliquer toutes les modifications (bouton check vert).</p></li>
 <li><p>Fermer GParted.</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
 <figure class="align-center" id="id9">
@@ -231,44 +244,55 @@
 <p><span class="caption-text">Interface de GParted</span><a class="headerlink" href="#id9" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
-<ul>
-<li><p><strong>Installer Ubuntu LTS 24.04 :</strong>
-- Utiliser l’Imager pour sélectionner :</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Installer Ubuntu LTS 24.04 :</strong></dt><dd><ul>
+<li><dl class="simple">
+<dt>Utiliser l’Imager pour sélectionner :</dt><dd><ul>
 <li><p>Modèle : Raspberry Pi 5.</p></li>
 <li><p>Système d’exploitation : Ubuntu LTS 24.04 Desktop.</p></li>
 <li><p>Stockage : choisir le groupe créé lors du partitionnement.</p></li>
 </ul>
-</div></blockquote>
-<ul class="simple">
+</dd>
+</dl>
+</li>
 <li><p>Confirmer les messages d’avertissement (perte de données) et définir un mot de passe.</p></li>
 <li><p>Consulter la <a class="reference external" href="https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#2-prepare-the-sd-card">documentation officielle Ubuntu</a> pour plus de détails.</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
 </section>
-<section id="outils">
-<h2>3. Outils<a class="headerlink" href="#outils" title="Lien vers cette rubrique"></a></h2>
-<ul class="simple">
-<li><p><strong>Sécurité :</strong>
-- Pour éviter tout risque d’électrisation, toucher la masse des tables de travail pour se décharger.</p></li>
-<li><p><strong>Captures d’écran :</strong>
-- Utiliser le logiciel Shutter : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">shutter</span></code>.</p></li>
-</ul>
+<section id="installer-ros2">
+<h2>3. Installer ROS2<a class="headerlink" href="#installer-ros2" title="Lien vers cette rubrique"></a></h2>
+<p>A COMPLETER</p>
 </section>
-<section id="utilisation-de-github">
-<h2>4. Utilisation de GitHub<a class="headerlink" href="#utilisation-de-github" title="Lien vers cette rubrique"></a></h2>
+<section id="outils">
+<h2>4. Outils<a class="headerlink" href="#outils" title="Lien vers cette rubrique"></a></h2>
+<p><strong>Captures d’écran :</strong>
+Utiliser le logiciel Shutter : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">shutter</span></code>.</p>
+<p><strong>Utilisation de GitHub :</strong></p>
 <ul class="simple">
-<li><p>Après avoir créé le dépôt, visualisez la documentation via :
-- Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.
-- Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
-<li><p>Pour mettre à jour un fork déjà réalisé :
-- Vérifier si il y a un upstream -&gt; git remote -v
-- Si aucun upstream est présent, il faut le créer : git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:yguel/informatique_industrielle_avec_ROS2.git
-- Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream
-- Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -&gt; git rebase upstream/rolling
-- Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull</p></li>
+<li><dl class="simple">
+<dt>Après avoir créé le dépôt, visualisez la documentation via :</dt><dd><ul>
+<li><p>Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.</p></li>
+<li><p>Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Pour mettre à jour un fork déjà réalisé :</dt><dd><ul>
+<li><p>Vérifier si il y a un upstream -&gt; git remote -v</p></li>
+<li><p>Si aucun upstream est présent, il faut le créer : git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:yguel/informatique_industrielle_avec_ROS2.git</p></li>
+<li><p>Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream</p></li>
+<li><p>Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -&gt; git rebase upstream/rolling</p></li>
+<li><p>Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </section>
 </section>
@@ -277,8 +301,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
-        <a href="a00s00_index.html" class="btn btn-neutral float-left" title="Documentation du projet d’Informatique Industrielle - Youri et Chloé" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
-        <a href="a00s02_dynamixel.html" class="btn btn-neutral float-right" title="Premier pas avec les dynamixel" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="a00s00_index.html" class="btn btn-neutral float-left" title="Documentation du projet d’Informatique Industrielle" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="a00s02_dynamixel.html" class="btn btn-neutral float-right" title="Premier pas avec les Dynamixel" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

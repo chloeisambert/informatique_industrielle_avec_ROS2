@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Premier pas avec les dynamixel &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
+  <title>Premier pas avec les Dynamixel &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
@@ -65,9 +65,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Projet Youri et Chloé</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle - Youri et Chloé</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="a00s01_prise_main_materiel.html">Prise en main du matériel</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Premier pas avec les dynamixel</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Premier pas avec les Dynamixel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation">Préparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execution-dun-projet">Exécution d’un projet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#controle-du-moteur">Contrôle du moteur</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="a00s03_pentograph.html">Utilisation et commande du pantographe</a></li>
 </ul>
 </li>
@@ -87,8 +92,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="a00s00_index.html">Documentation du projet d’Informatique Industrielle - Youri et Chloé</a></li>
-      <li class="breadcrumb-item active">Premier pas avec les dynamixel</li>
+          <li class="breadcrumb-item"><a href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a></li>
+      <li class="breadcrumb-item active">Premier pas avec les Dynamixel</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/a00_projet_YouriChloe/a00s02_dynamixel.rst.txt" rel="nofollow"> Afficher la source de la page</a>
       </li>
@@ -99,44 +104,123 @@
            <div itemprop="articleBody">
              
   <section id="premier-pas-avec-les-dynamixel">
-<h1>Premier pas avec les dynamixel<a class="headerlink" href="#premier-pas-avec-les-dynamixel" title="Lien vers cette rubrique"></a></h1>
-<p>Suivre le tuto vidéo jusqu’à 1min17 : dans la commande git clone, remplacer « $ROS_DISTRO » par « humble ». ROS_DISTRO correspond à la version de ROS installé sur l’ordinateur. Le tuto est en ROS humble, comme notre ordinateur est en ROS jazzy, nous ne devons pas mettre notre ROS_DISTRO mais forcer à être en humble.</p>
-<p>Se placer dans le dossier robotis_ws. Normalement, si vous faites
-« ros2 »
-La commande n’est pas trouvé. Il faut définir la source :
-nano /bashrc
-Et rajouter à la fin :
-source /opt/ros/jazzy/setup.bash
-Puis vérifier que ros2 à récupérer tout ses packages en écrivant ros2.
-Il faut setup dans le fichier install :
-dans robotis_ws, écrire « source install/setup.bash »
-Puis vous pouvez build :
-colcon build –symlink-install</p>
-<p>Run un projet :</p>
-<p>Il faut se donner les permissions :
-sudo usermod -aG dialout &lt;linux_account&gt; et remplacer &lt;linux_account&gt; par votre nom de compte
-Pour checker son nom de compte : whoami dans la console</p>
-<p>Redémarrer votre machine pour rendre effectif les changements de permissions</p>
-<p>Ensuite, dans visual studio code, aller dans votre projet robotis_ws</p>
-<p>Ouvrir : src &gt; DynamixelSDK &gt; dynamixel_sdk_examples &gt; src &gt; read_write_node.cpp</p>
-<p>Et modifier les lignes 42 à 46 par le code suivant :
-// Control table address for X series (except XL-320)
-#define ADDR_OPERATING_MODE 255
-#define ADDR_TORQUE_ENABLE 24
-#define ADDR_GOAL_POSITION 30
-#define ADDR_PRESENT_POSITION 36</p>
-<p>Puis changer le protocol de communication par :
-« #define PROTOCOL_VERSION 1.0 » à la ligne 49</p>
-<p>Puis changer le baudrate par 115200, enregistrer.</p>
-<p>revenir à robotis_ws, build avec :
-colcon build –symlink-install</p>
-<p>Et resourcer :
-source install/setup.bash</p>
-<p>Puis rentrer la commande suivante :
-ros2 run dynamixel_sdk_examples read_write_node</p>
-<p>Vous êtes en mode controle du moteur, ouvrez un nouveau terminal, se mettre dans le dossier robotis_ws, sourcer avec source install/setup.bash et écrire :</p>
-<p>ros2 topic pub -1 /set_position dynamixel_sdk_custom_interfaces/msg/SetPosition « {id: 1, position: 500} »</p>
-<p>Votre moteur tourne !</p>
+<h1>Premier pas avec les Dynamixel<a class="headerlink" href="#premier-pas-avec-les-dynamixel" title="Lien vers cette rubrique"></a></h1>
+<section id="preparation">
+<h2>Préparation<a class="headerlink" href="#preparation" title="Lien vers cette rubrique"></a></h2>
+<ol class="arabic">
+<li><p><strong>Suivre le tuto vidéo jusqu’à 1min17 :</strong>
+Dans la commande <cite>git clone</cite>, remplacer <code class="docutils literal notranslate"><span class="pre">$ROS_DISTRO</span></code> par <code class="docutils literal notranslate"><span class="pre">humble</span></code>. <code class="docutils literal notranslate"><span class="pre">ROS_DISTRO</span></code> correspond à la version de ROS installée sur l’ordinateur. Le tuto est basé sur ROS Humble. Comme notre ordinateur utilise ROS Jazzy, nous devons forcer l’utilisation de Humble.</p></li>
+<li><p><strong>Configurer l’environnement ROS :</strong>
+- Naviguez dans le dossier <code class="docutils literal notranslate"><span class="pre">robotis_ws</span></code>.
+- Vérifiez si la commande <code class="docutils literal notranslate"><span class="pre">ros2</span></code> est reconnue. Si ce n’est pas le cas :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ouvrez le fichier <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> :
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">nano</span> <span class="pre">~/.bashrc</span>
+<span class="pre">`</span></code></p></li>
+<li><p>Ajoutez à la fin du fichier :
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">source</span> <span class="pre">/opt/ros/jazzy/setup.bash</span>
+<span class="pre">`</span></code></p></li>
+<li><p>Rechargez le terminal pour appliquer les modifications.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Vérifier les packages ROS :</strong>
+- Tapez la commande <code class="docutils literal notranslate"><span class="pre">ros2</span></code> pour vous assurer que tout est en place.</p></li>
+<li><p><strong>Configurer et construire le projet :</strong>
+- Dans le dossier <code class="docutils literal notranslate"><span class="pre">robotis_ws</span></code>, exécutez :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">source</span> <span class="pre">install/setup.bash</span>
+<span class="pre">colcon</span> <span class="pre">build</span> <span class="pre">--symlink-install</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="execution-dun-projet">
+<h2>Exécution d’un projet<a class="headerlink" href="#execution-dun-projet" title="Lien vers cette rubrique"></a></h2>
+<ol class="arabic">
+<li><p><strong>Configurer les permissions :</strong>
+- Ajoutez votre utilisateur au groupe <code class="docutils literal notranslate"><span class="pre">dialout</span></code> pour accéder aux ports série :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">sudo</span> <span class="pre">usermod</span> <span class="pre">-aG</span> <span class="pre">dialout</span> <span class="pre">&lt;linux_account&gt;</span>
+<span class="pre">`</span></code>
+Remplacez <code class="docutils literal notranslate"><span class="pre">&lt;linux_account&gt;</span></code> par votre nom d’utilisateur Linux. Pour connaître votre nom d’utilisateur, utilisez :
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">whoami</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Redémarrez la machine pour appliquer les modifications.</p></li>
+</ul>
+</li>
+<li><p><strong>Ouvrir et modifier le code source :</strong>
+- Dans Visual Studio Code, naviguez vers :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">src</span> <span class="pre">&gt;</span> <span class="pre">DynamixelSDK</span> <span class="pre">&gt;</span> <span class="pre">dynamixel_sdk_examples</span> <span class="pre">&gt;</span> <span class="pre">src</span> <span class="pre">&gt;</span> <span class="pre">read_write_node.cpp</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Remplacez les lignes 42 à 46 par le code suivant :
+<code class="docutils literal notranslate"><span class="pre">`cpp</span>
+<span class="pre">//</span> <span class="pre">Control</span> <span class="pre">table</span> <span class="pre">address</span> <span class="pre">for</span> <span class="pre">X</span> <span class="pre">series</span> <span class="pre">(except</span> <span class="pre">XL-320)</span>
+<span class="pre">#define</span> <span class="pre">ADDR_OPERATING_MODE</span> <span class="pre">255</span>
+<span class="pre">#define</span> <span class="pre">ADDR_TORQUE_ENABLE</span> <span class="pre">24</span>
+<span class="pre">#define</span> <span class="pre">ADDR_GOAL_POSITION</span> <span class="pre">30</span>
+<span class="pre">#define</span> <span class="pre">ADDR_PRESENT_POSITION</span> <span class="pre">36</span>
+<span class="pre">`</span></code></p></li>
+<li><p>Modifiez la ligne 49 pour définir le protocole de communication :
+<code class="docutils literal notranslate"><span class="pre">`cpp</span>
+<span class="pre">#define</span> <span class="pre">PROTOCOL_VERSION</span> <span class="pre">1.0</span>
+<span class="pre">`</span></code></p></li>
+<li><p>Changez la valeur du baudrate en <code class="docutils literal notranslate"><span class="pre">115200</span></code>. Enregistrez vos modifications.</p></li>
+</ul>
+</li>
+<li><p><strong>Reconstruire et resourcer :</strong>
+- Revenez dans le dossier <code class="docutils literal notranslate"><span class="pre">robotis_ws</span></code> et exécutez :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">colcon</span> <span class="pre">build</span> <span class="pre">--symlink-install</span>
+<span class="pre">source</span> <span class="pre">install/setup.bash</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+</li>
+<li><p><strong>Lancer le programme :</strong>
+- Tapez la commande suivante :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">ros2</span> <span class="pre">run</span> <span class="pre">dynamixel_sdk_examples</span> <span class="pre">read_write_node</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="controle-du-moteur">
+<h2>Contrôle du moteur<a class="headerlink" href="#controle-du-moteur" title="Lien vers cette rubrique"></a></h2>
+<ol class="arabic">
+<li><p><strong>Envoyer une commande de position :</strong>
+- Ouvrez un nouveau terminal.
+- Naviguez dans le dossier <code class="docutils literal notranslate"><span class="pre">robotis_ws</span></code> et exécutez :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">source</span> <span class="pre">install/setup.bash</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Lancez la commande suivante :
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">pub</span> <span class="pre">-1</span> <span class="pre">/set_position</span> <span class="pre">dynamixel_sdk_custom_interfaces/msg/SetPosition</span> <span class="pre">&quot;{id:</span> <span class="pre">1,</span> <span class="pre">position:</span> <span class="pre">500}&quot;</span>
+<span class="pre">`</span></code></p></li>
+</ul>
+<p>Votre moteur devrait tourner !</p>
+</li>
+</ol>
+</section>
 </section>
 
 

@@ -1,6 +1,6 @@
-####################################################################
-Documentation du projet d'Informatique Industrielle - Youri et Chloé
-####################################################################
+###################################################
+Documentation du projet d'Informatique Industrielle
+###################################################
 
 .. toctree::
    :maxdepth: 2
