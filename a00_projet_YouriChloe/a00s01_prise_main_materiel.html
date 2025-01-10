@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prise en main du matériel &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -69,7 +69,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Prise en main du matériel</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#preparation-du-materiel">1. Préparation du matériel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installer-l-os">2. Installer l’OS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#installer-ros2">1. Installer ROS2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installer-ros2">3. Installer ROS2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#outils">4. Outils</a></li>
 </ul>
 </li>
@@ -136,14 +136,14 @@
 </figure>
 <section id="preparation-du-materiel">
 <h2>1. Préparation du matériel<a class="headerlink" href="#preparation-du-materiel" title="Lien vers cette rubrique"></a></h2>
-<ul class="simple">
-<li><dl class="simple">
-<dt><strong>Installer le radiateur sur la Raspberry Pi :</strong></dt><dd><ul>
+<ul>
+<li><p><strong>Installer le radiateur sur la Raspberry Pi :</strong></p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Retirer le cache du connecteur JST avant installation.</p></li>
 <li><p>Suivre les instructions fournies dans la <a class="reference external" href="https://datasheets.raspberrypi.com/cooling/raspberry-pi-active-cooler-product-brief.pdf">notice d’installation du radiateur</a>.</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
 <figure class="align-center" id="id5">
@@ -153,9 +153,10 @@
 <p><span class="caption-text">Radiateur installé sur la Raspberry</span><a class="headerlink" href="#id5" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
-<ul class="simple">
-<li><dl class="simple">
-<dt><strong>Installer le dissipateur thermique et le disque dur :</strong></dt><dd><ul>
+<ul>
+<li><p><strong>Installer le dissipateur thermique et le disque dur :</strong></p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Retirer l’opercule du dissipateur thermique (lame bleue) et le coller sur le disque dur.</p></li>
 <li><p>Insérer le disque dur dans l’encoche de la carte NVMe BASE Pimoroni (présence d’un détrompeur).</p></li>
 <li><p>Fixer avec une vis de référence (vis-écrou-disque dur-écrou).</p></li>
@@ -164,8 +165,7 @@
 <li><p>Positionner et visser la Raspberry sur la base.</p></li>
 <li><p>Référez-vous au <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">support du disque dur Pimoroni</a>.</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
 <figure class="align-center" id="id6">
@@ -185,64 +185,115 @@
 </section>
 <section id="installer-l-os">
 <h2>2. Installer l’OS<a class="headerlink" href="#installer-l-os" title="Lien vers cette rubrique"></a></h2>
+<p><strong>Préparation initiale :</strong></p>
 <blockquote>
-<div><dl class="simple">
-<dt><strong>Préparation initiale :</strong></dt><dd><ul class="simple">
+<div><ul>
 <li><p>Insérer la carte SD contenant Raspbian dans la Raspberry Pi.</p></li>
 <li><p>Brancher le câble HDMI et l’alimentation, ainsi qu’un clavier et une souris en USB.</p></li>
-<li><dl class="simple">
-<dt>Si la carte SD est utilisée pour la première fois :</dt><dd><ul>
+<li><p>Si la carte SD est utilisée pour la première fois :</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Configurer les paramètres (langue : français, etc.).</p></li>
 <li><p>Identifiants par défaut : username : <cite>pi</cite>, password : <cite>pi</cite>.</p></li>
 <li><p>Configurer un partage de connexion avec un téléphone pour accéder à Internet.</p></li>
 <li><p>Définir Firefox comme navigateur par défaut, mettre à jour, puis redémarrer.</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
-</dd>
-</dl>
 </div></blockquote>
-<figure class="align-default">
-<img alt="a00_projet_YouriChloe/img/branchement_rasp.jpg:align:center:width:30%" src="a00_projet_YouriChloe/img/branchement_rasp.jpg:align:center:width:30%" />
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/branchement_rasp.jpg"><img alt="../_images/branchement_rasp.jpg" src="../_images/branchement_rasp.jpg" style="width: 30%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Branchements de la Raspberry</span><a class="headerlink" href="#id8" title="Lien vers cette image"></a></p>
+</figcaption>
 </figure>
-<figure class="align-default">
-<img alt="a00_projet_YouriChloe/img/separation_dd.jpg:align:center:width:30%" src="a00_projet_YouriChloe/img/separation_dd.jpg:align:center:width:30%" />
+<p><strong>Installation du système sur le disque NVMe :</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ouvrir un terminal et suivre la section <em>« Installing your OS onto the NVMe SSD »</em> dans le <a class="reference external" href="https://learn.pimoroni.com/article/getting-started-with-nvme-base">guide de support Pimoroni</a>.</p></li>
+<li><p>À l’étape <em>« OS Installation Options »</em>, utiliser l’option 1 : <em>Install a new OS using Raspberry Pi OS Desktop</em> avec Raspberry Pi Imager.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Partitionnement du disque dur :</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Installer l’outil GParted : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gparted</span></code>.</p></li>
+<li><p>Ouvrir GParted (Menu -&gt; Outil système).</p></li>
+<li><p>Sélectionner en haut à droite : <cite>/dev/nvme0n1</cite>.</p></li>
+<li><p>Créez une table de partition (type : msdos).</p></li>
+<li><p>Définir une nouvelle partition :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Taille : 122000 (la moitié du disque).</p></li>
+<li><p>Étiquette : nom personnalisé.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Appliquer toutes les modifications (bouton check vert).</p></li>
+<li><p>Fermer GParted.</p></li>
+</ul>
+</div></blockquote>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/separation_dd.jpg"><img alt="../_images/separation_dd.jpg" src="../_images/separation_dd.jpg" style="width: 40%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Interface de GParted</span><a class="headerlink" href="#id9" title="Lien vers cette image"></a></p>
+</figcaption>
 </figure>
+<p><strong>Installer Ubuntu LTS 24.04 :</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Utiliser l’Imager pour sélectionner :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Modèle : Raspberry Pi 5.</p></li>
+<li><p>Système d’exploitation : Ubuntu LTS 24.04 Desktop.</p></li>
+<li><p>Stockage : choisir le groupe créé lors du partitionnement.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Confirmer les messages d’avertissement (perte de données) et définir un mot de passe.</p></li>
+<li><p>Consulter la <a class="reference external" href="https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#2-prepare-the-sd-card">documentation officielle Ubuntu</a> pour plus de détails.</p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="installer-ros2">
-<h2>1. Installer ROS2<a class="headerlink" href="#installer-ros2" title="Lien vers cette rubrique"></a></h2>
+<h2>3. Installer ROS2<a class="headerlink" href="#installer-ros2" title="Lien vers cette rubrique"></a></h2>
 <p>A COMPLETER</p>
 </section>
 <section id="outils">
 <h2>4. Outils<a class="headerlink" href="#outils" title="Lien vers cette rubrique"></a></h2>
+<dl class="simple">
+<dt><strong>Captures d’écran :</strong></dt><dd><p>Utiliser le logiciel Shutter : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">shutter</span></code>.</p>
+</dd>
+</dl>
+<p><strong>Utilisation de GitHub :</strong></p>
 <blockquote>
-<div><p><strong>Captures d’écran :</strong>
-Utiliser le logiciel Shutter : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">shutter</span></code>.</p>
-<dl>
-<dt><strong>Utilisation de GitHub :</strong></dt><dd><blockquote>
+<div><blockquote>
 <div><ul class="simple">
-<li><p>Après avoir créé le dépôt, visualisez la documentation via :
-- Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.
-- Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
+<li><p>Après avoir créé le dépôt, visualisez la documentation via :</p>
+<ul>
+<li><p>Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.</p></li>
+<li><p>Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
+</ul>
+</li>
 </ul>
 </div></blockquote>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Pour mettre à jour un fork déjà réalisé :</dt><dd><ul>
+<ul>
+<li><p>Pour mettre à jour un fork déjà réalisé :</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Vérifier si il y a un upstream -&gt; git remote -v</p></li>
 <li><p>Si aucun upstream est présent, il faut le créer : git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:yguel/informatique_industrielle_avec_ROS2.git</p></li>
 <li><p>Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream</p></li>
 <li><p>Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -&gt; git rebase upstream/rolling</p></li>
 <li><p>Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
-</dd>
-</dl>
 </div></blockquote>
 </section>
 </section>

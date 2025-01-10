@@ -11,11 +11,13 @@ Préparation
 
 
 2. **Configurer l'environnement ROS :**
+   
     - Naviguez dans le dossier ``robotis_ws``.
     - Vérifiez si la commande ``ros2`` est reconnue. Si ce n'est pas le cas :
-       - Ouvrez le fichier ``.bashrc`` : ``nano ~/.bashrc``
-       - Ajoutez à la fin du fichier : ``source /opt/ros/jazzy/setup.bash``
-       - Rechargez le terminal pour appliquer les modifications.
+  
+         - Ouvrez le fichier ``.bashrc`` : ``nano ~/.bashrc``
+         - Ajoutez à la fin du fichier : ``source /opt/ros/jazzy/setup.bash``
+         - Rechargez le terminal pour appliquer les modifications.
 
 
 3. **Vérifier les packages ROS :**
@@ -37,19 +39,19 @@ Exécution d’un projet
 ----------------------
 
 1. **Configurer les permissions :**
-    - Ajoutez votre utilisateur au groupe ``dialout`` pour accéder aux ports série :
+
+Ajoutez votre utilisateur au groupe ``dialout`` pour accéder aux ports série :
 
 .. code-block:: bash
 
    sudo usermod -aG dialout <linux_account>
 
-Remplacez ``<linux_account>`` par votre nom d'utilisateur Linux. Pour connaître votre nom d'utilisateur, utilisez : ``whoami``
-
-    - Redémarrez la machine pour appliquer les modifications.
+Remplacez ``<linux_account>`` par votre nom d'utilisateur Linux. Pour connaître votre nom d'utilisateur, utilisez : ``whoami``. Puis redémarrez la machine pour appliquer les modifications.
 
 2. **Ouvrir et modifier le code source :**
-    - Dans Visual Studio Code, naviguez vers : src > DynamixelSDK > dynamixel_sdk_examples > src > read_write_node.cpp
-    - Remplacez les lignes 42 à 46 par le code suivant : 
+
+- Dans Visual Studio Code, naviguez vers : src > DynamixelSDK > dynamixel_sdk_examples > src > read_write_node.cpp
+- Remplacez les lignes 42 à 46 par le code suivant : 
 
 .. code-block:: bash
 
@@ -59,23 +61,20 @@ Remplacez ``<linux_account>`` par votre nom d'utilisateur Linux. Pour connaître
    #define ADDR_GOAL_POSITION 30
    #define ADDR_PRESENT_POSITION 36
 
-Ensuite 
-    - Modifiez la ligne 49 pour définir le protocole de communication : ``#define PROTOCOL_VERSION 1.0``
-    - Changez la valeur du baudrate en ``115200``. Enregistrez vos modifications.
 
-3. **Reconstruire et resourcer :**
+- Modifiez la ligne 49 pour définir le protocole de communication : ``#define PROTOCOL_VERSION 1.0``
+- Changez la valeur du baudrate en ``115200``. Enregistrez vos modifications.
 
-    Revenez dans le dossier ``robotis_ws`` et exécutez : 
+3. **Reconstruire, resourcer et lancer le programme :**
+
+Revenez dans le dossier ``robotis_ws`` et exécutez : 
 
 .. code-block:: bash
 
    colcon build --symlink-install
    source install/setup.bash
 
-
-4. **Lancer le programme :**
-
-    Tapez la commande suivante : 
+Puis, tapez la commande suivante : 
 
 .. code-block:: bash
 
@@ -85,16 +84,21 @@ Ensuite
 Contrôle du moteur
 ------------------
 
- **Envoyer une commande de position :**
-    - Ouvrez un nouveau terminal.
-    - Naviguez dans le dossier ``robotis_ws`` et exécutez : 
+Pour envoyer une commande de position :
+
+- Ouvrez un nouveau terminal.
+- Naviguez dans le dossier ``robotis_ws`` et exécutez : 
+
 .. code-block:: bash
 
    source install/setup.bash
+
+.. end codeblock
 
 - Lancez la commande suivante : 
 
 .. code-block:: bash
 
    ros2 topic pub -1 /set_position dynamixel_sdk_custom_interfaces/msg/SetPosition "{id: 1, position: 500}"
+
 Votre moteur devrait tourner !
