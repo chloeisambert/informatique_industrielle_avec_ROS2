@@ -6,12 +6,13 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Premier pas avec les Dynamixel &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
+  <title>Premier pas avec les moteurs Dynamixel &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
       <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fdcf8bf8" />
 
   
@@ -24,6 +25,7 @@
       <script src="../_static/copybutton.js?v=30646c52"></script>
       <script src="../_static/translations.js?v=e6b791cb"></script>
       <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
@@ -68,10 +70,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="a00s01_prise_main_materiel.html">Prise en main du matériel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a00s01bis_tipstools.html">Astuces et outils</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Premier pas avec les Dynamixel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#preparation">Préparation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#execution-dun-projet">Exécution d’un projet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#controle-du-moteur">Contrôle du moteur</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Premier pas avec les moteurs Dynamixel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation">1. Préparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execution-dun-projet">2. Exécution d’un projet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#controle-du-moteur">3. Contrôle du moteur</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="a00s03_pentograph.html">Utilisation et commande du pantographe</a></li>
@@ -94,7 +96,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a></li>
-      <li class="breadcrumb-item active">Premier pas avec les Dynamixel</li>
+      <li class="breadcrumb-item active">Premier pas avec les moteurs Dynamixel</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/a00_projet_YouriChloe/a00s02_dynamixel.rst.txt" rel="nofollow"> Afficher la source de la page</a>
       </li>
@@ -104,24 +106,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="premier-pas-avec-les-dynamixel">
-<h1>Premier pas avec les Dynamixel<a class="headerlink" href="#premier-pas-avec-les-dynamixel" title="Lien vers cette rubrique"></a></h1>
+  <section id="premier-pas-avec-les-moteurs-dynamixel">
+<h1>Premier pas avec les moteurs Dynamixel<a class="headerlink" href="#premier-pas-avec-les-moteurs-dynamixel" title="Lien vers cette rubrique"></a></h1>
 <section id="preparation">
-<h2>Préparation<a class="headerlink" href="#preparation" title="Lien vers cette rubrique"></a></h2>
+<h2>1. Préparation<a class="headerlink" href="#preparation" title="Lien vers cette rubrique"></a></h2>
 <ol class="arabic">
-<li><p><strong>Suivre le tuto vidéo jusqu’à 1min17 :</strong></p>
-<blockquote>
-<div><p>Dans la commande <cite>git clone</cite>, remplacer <code class="docutils literal notranslate"><span class="pre">$ROS_DISTRO</span></code> par <code class="docutils literal notranslate"><span class="pre">humble</span></code>. <code class="docutils literal notranslate"><span class="pre">ROS_DISTRO</span></code> correspond à la version de ROS installée sur l’ordinateur. Le tuto est basé sur ROS Humble. Comme notre ordinateur utilise ROS Jazzy, nous devons forcer l’utilisation de Humble.</p>
-</div></blockquote>
+<li><p><strong>Mise en place de la maquette</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Suivre un tutoriel vidéo dédié</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Suivre un tutoriel écrit</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Rendez-vous sur <a class="reference external" href="https://www.youtube.com/watch?v=E8XPqDjof4U">ce tutoriel</a> et suivre jusqu’à <strong>1min17</strong> si vous utilisez <cite>ROS2 Jazzy</cite>.</p>
+<p>Dans la commande <cite>git clone</cite>, remplacer <code class="docutils literal notranslate"><span class="pre">$ROS_DISTRO</span></code> par <code class="docutils literal notranslate"><span class="pre">humble</span></code>. <code class="docutils literal notranslate"><span class="pre">ROS_DISTRO</span></code> correspond à la version de ROS installée sur l’ordinateur. Le tuto est basé sur ROS Humble. Comme notre ordinateur utilise ROS Jazzy, nous devons forcer l’utilisation de Humble.</p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><figure class="align-right" id="id1">
+<a class="reference internal image-reference" href="../_images/diagDynamixel.png"><img alt="../_images/diagDynamixel.png" src="../_images/diagDynamixel.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Diagramme de câblage Dynamixel</span><a class="headerlink" href="#id1" title="Lien vers cette image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>A partir de l’image ci-dessus, réalisez le câblage du moteur Dynamixel en suivant les étapes ci-dessous :</p></li>
+<li><p>Connectez le moteur Dynamixel à la carte de contrôle U2D2 en utilisant le câble fourni.</p></li>
+<li><p>Branchez la carte de contrôle U2D2 à votre ordinateur via un câble USB.</p></li>
+<li><p>Assurez-vous que les connexions sont sécurisées et que le moteur est correctement alimenté.</p></li>
+<li><p>Ensuite, sur votre ordinateur, lancer un terminal et exécutez les commandes suivantes :</p></li>
+<li><p>Créer l’espace de travail :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/robotis_ws/src
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Naviguez dans le dossier <code class="docutils literal notranslate"><span class="pre">src</span></code>:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/robotis_ws/src
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Clonez le dépôt <code class="docutils literal notranslate"><span class="pre">DynamixelSDK</span></code> :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>humble-devel<span class="w"> </span>https://github.com/ROBOTIS-GIT/DynamixelSDK
+</pre></div>
+</div>
+</div></div>
 </li>
 <li><p><strong>Configurer l’environnement ROS :</strong></p>
 <blockquote>
 <div><ul>
-<li><p>Naviguez dans le dossier <code class="docutils literal notranslate"><span class="pre">robotis_ws</span></code>.</p></li>
+<li><p>Revenir dans le dossier <code class="docutils literal notranslate"><span class="pre">robotis_ws</span></code>.</p></li>
 <li><p>Vérifiez si la commande <code class="docutils literal notranslate"><span class="pre">ros2</span></code> est reconnue. Si ce n’est pas le cas :</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Ouvrez le fichier <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> : <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">~/.bashrc</span></code></p></li>
+<li><p>Ouvrez le fichier <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nano<span class="w"> </span>~/.bashrc
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Ajoutez à la fin du fichier : <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">/opt/ros/jazzy/setup.bash</span></code></p></li>
 <li><p>Rechargez le terminal pour appliquer les modifications.</p></li>
 </ul>
@@ -147,7 +185,7 @@ colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
 </ol>
 </section>
 <section id="execution-dun-projet">
-<h2>Exécution d’un projet<a class="headerlink" href="#execution-dun-projet" title="Lien vers cette rubrique"></a></h2>
+<h2>2. Exécution d’un projet<a class="headerlink" href="#execution-dun-projet" title="Lien vers cette rubrique"></a></h2>
 <ol class="arabic simple">
 <li><p><strong>Configurer les permissions :</strong></p></li>
 </ol>
@@ -161,7 +199,7 @@ colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
 </ol>
 <ul class="simple">
 <li><p>Dans Visual Studio Code, naviguez vers : src &gt; DynamixelSDK &gt; dynamixel_sdk_examples &gt; src &gt; read_write_node.cpp</p></li>
-<li><p>Remplacez les lignes 42 à 46 par le code suivant :</p></li>
+<li><p>Remplacez les lignes <strong>42 à 46</strong> par le code suivant :</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>//<span class="w"> </span>Control<span class="w"> </span>table<span class="w"> </span>address<span class="w"> </span><span class="k">for</span><span class="w"> </span>X<span class="w"> </span>series<span class="w"> </span><span class="o">(</span>except<span class="w"> </span>XL-320<span class="o">)</span>
 <span class="c1">#define ADDR_OPERATING_MODE 255</span>
@@ -171,8 +209,8 @@ colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Modifiez la ligne 49 pour définir le protocole de communication : <code class="docutils literal notranslate"><span class="pre">#define</span> <span class="pre">PROTOCOL_VERSION</span> <span class="pre">1.0</span></code></p></li>
-<li><p>Changez la valeur du baudrate en <code class="docutils literal notranslate"><span class="pre">115200</span></code>. Enregistrez vos modifications.</p></li>
+<li><p>Modifiez la ligne <strong>49</strong> pour définir le protocole de communication : <code class="docutils literal notranslate"><span class="pre">#define</span> <span class="pre">PROTOCOL_VERSION</span> <span class="pre">1.0</span></code></p></li>
+<li><p>Changez la valeur du baudrate en <strong>115200</strong>. Enregistrez vos modifications.</p></li>
 </ul>
 <ol class="arabic simple" start="3">
 <li><p><strong>Reconstruire, resourcer et lancer le programme :</strong></p></li>
@@ -188,7 +226,7 @@ colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
 </div>
 </section>
 <section id="controle-du-moteur">
-<h2>Contrôle du moteur<a class="headerlink" href="#controle-du-moteur" title="Lien vers cette rubrique"></a></h2>
+<h2>3. Contrôle du moteur<a class="headerlink" href="#controle-du-moteur" title="Lien vers cette rubrique"></a></h2>
 <p>Pour envoyer une commande de position :</p>
 <ul class="simple">
 <li><p>Ouvrez un nouveau terminal.</p></li>
@@ -198,12 +236,16 @@ colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Lancez la commande suivante :</p></li>
+<li><p>Lancez la commande suivante pour faire tourner votre moteur, par exemple, à une position <code class="docutils literal notranslate"><span class="pre">500</span></code> :</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>-1<span class="w"> </span>/set_position<span class="w"> </span>dynamixel_sdk_custom_interfaces/msg/SetPosition<span class="w"> </span><span class="s2">&quot;{id: 1, position: 500}&quot;</span>
 </pre></div>
 </div>
 <p>Votre moteur devrait tourner !</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La position des moteurs est codée sur 10 bits, donc la commande peut prendre des valeurs de 0 à 1023. La position 500 correspond à, environ, la moitié de la course du moteur. Il est possible de changer le moteur que l’on souhaite tourner avec l’ID du moteur. Par exemple, pour le moteur 2, remplacez <code class="docutils literal notranslate"><span class="pre">id:</span> <span class="pre">1</span></code> par <code class="docutils literal notranslate"><span class="pre">id:</span> <span class="pre">2</span></code>.</p>
+</div>
 </section>
 </section>
 

@@ -12,6 +12,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
       <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fdcf8bf8" />
 
   
@@ -24,10 +25,11 @@
       <script src="../_static/copybutton.js?v=30646c52"></script>
       <script src="../_static/translations.js?v=e6b791cb"></script>
       <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Premier pas avec les Dynamixel" href="a00s02_dynamixel.html" />
+    <link rel="next" title="Premier pas avec les moteurs Dynamixel" href="a00s02_dynamixel.html" />
     <link rel="prev" title="Prise en main du matériel" href="a00s01_prise_main_materiel.html" /> 
 </head>
 
@@ -68,23 +70,23 @@
 <li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="a00s01_prise_main_materiel.html">Prise en main du matériel</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Astuces et outils</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#astuces-git">Astuces Git</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#astuces-git-github">1. Astuces Git/GitHub</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#utiliser-git-add-u">Utiliser <cite>git add -u</cite></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#reinitialiser-un-fichier-modifie">Réinitialiser un fichier modifié</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mise-en-place-de-git-sur-windows">Mise en place de Git sur Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualiser-la-documentation-en-ligne">Visualiser la documentation en ligne</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inviter-des-collaborateurs-sur-un-projet">Inviter des collaborateurs sur un projet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mettre-a-jour-un-fork-realise-sur-github">Mettre à jour un fork réalisé sur GitHub</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#applications-ou-extensions-optionnelles">Applications ou extensions optionnelles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#visualiser-sa-documentation-en-local">2. Visualiser sa documentation en local</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#applications-ou-extensions-optionnelles">3. Applications ou extensions optionnelles</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#captures-d-ecran">Captures d’écran</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#visualiser-sa-documentation-en-local">Visualiser sa documentation en local</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#premiere-possibilite-installer-et-configurer-esbonio">Première possibilité : Installer et configurer Esbonio</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#seconde-possibilite-generer-directement-un-fichier-html-local">Seconde possibilité : Générer directement un fichier .html local</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="a00s02_dynamixel.html">Premier pas avec les Dynamixel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a00s02_dynamixel.html">Premier pas avec les moteurs Dynamixel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a00s03_pentograph.html">Utilisation et commande du pantographe</a></li>
 </ul>
 </li>
@@ -117,14 +119,15 @@
              
   <section id="astuces-et-outils">
 <h1>Astuces et outils<a class="headerlink" href="#astuces-et-outils" title="Lien vers cette rubrique"></a></h1>
-<section id="astuces-git">
-<h2>Astuces Git<a class="headerlink" href="#astuces-git" title="Lien vers cette rubrique"></a></h2>
+<section id="astuces-git-github">
+<h2>1. Astuces Git/GitHub<a class="headerlink" href="#astuces-git-github" title="Lien vers cette rubrique"></a></h2>
 <section id="utiliser-git-add-u">
 <h3>Utiliser <cite>git add -u</cite><a class="headerlink" href="#utiliser-git-add-u" title="Lien vers cette rubrique"></a></h3>
 <p>La commande <cite>git add -u</cite> est utilisée pour mettre à jour l’index avec les modifications apportées aux fichiers déjà suivis par Git (modifiés ou supprimés), sans inclure de nouveaux fichiers non suivis.</p>
-<ol class="arabic">
+<ul>
 <li><p><strong>Ajouter les modifications des fichiers suivis</strong> :</p>
-<p>Utilisez la commande suivante pour ajouter uniquement les modifications des fichiers déjà suivis par Git (et éviter d’ajouter des fichiers non nécessaires et seulement les fichiers que vous venez de modifier) :</p>
+<blockquote>
+<div><p>Utilisez la commande suivante pour ajouter uniquement les modifications des fichiers déjà suivis par Git (et éviter d’ajouter des fichiers non nécessaires et seulement les fichiers que vous venez de modifier) :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>-u
 </pre></div>
 </div>
@@ -132,26 +135,30 @@
 <li><p>Cette commande met à jour l’index en incluant :</p>
 <ul>
 <li><p>Les fichiers modifiés.</p></li>
-<li><p>Les fichiers supprimés.*</p></li>
+<li><p>Les fichiers supprimés.</p></li>
 </ul>
 </li>
 <li><p>Les fichiers non suivis (nouveaux fichiers) ne sont pas pris en compte.</p></li>
 <li><p>Une fois la commande exécutée, utilisez <cite>git status</cite> pour vérifier quels fichiers ont été ajoutés à l’index.</p></li>
 </ul>
+</div></blockquote>
 </li>
-<li><p><strong>Ajouter les modifications dans un répertoire spécifique</strong> :</p>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Ajouter les modifications dans un répertoire spécifique</strong> :</p>
 <p>Si vous souhaitez limiter l’opération à un répertoire particulier, utilisez :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>-u<span class="w"> </span>&lt;chemin_du_répertoire&gt;
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Exemple : Ajouter uniquement les modifications dans le dossier <cite>src</cite> :
-<code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">git</span> <span class="pre">add</span> <span class="pre">-u</span> <span class="pre">src/</span>
-<span class="pre">`</span></code></p></li>
-</ul>
+<ul>
+<li><p>Exemple : Ajouter uniquement les modifications dans le dossier <cite>src</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>-u<span class="w"> </span>src/
+</pre></div>
+</div>
 </li>
-</ol>
+</ul>
+</div>
 </section>
 <section id="reinitialiser-un-fichier-modifie">
 <h3>Réinitialiser un fichier modifié<a class="headerlink" href="#reinitialiser-un-fichier-modifie" title="Lien vers cette rubrique"></a></h3>
@@ -180,32 +187,174 @@
 </li>
 </ol>
 </section>
-</section>
-<section id="applications-ou-extensions-optionnelles">
-<h2>Applications ou extensions optionnelles<a class="headerlink" href="#applications-ou-extensions-optionnelles" title="Lien vers cette rubrique"></a></h2>
-<section id="captures-d-ecran">
-<h3>Captures d’écran<a class="headerlink" href="#captures-d-ecran" title="Lien vers cette rubrique"></a></h3>
-<p>Si vous souhaitez réaliser des captures d’écran sur <strong>Ubuntu 20.04</strong>, vous pouvez utiliser le logiciel <strong>Shutter</strong>.
-Pour l’installer, exécutez la commande suivante dans un terminal :</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>shutter
+<section id="mise-en-place-de-git-sur-windows">
+<h3>Mise en place de Git sur Windows<a class="headerlink" href="#mise-en-place-de-git-sur-windows" title="Lien vers cette rubrique"></a></h3>
+<p>Pour installer et configurer Git sur un ordinateur Windows, suivez ces étapes :</p>
+<ol class="arabic">
+<li><p><strong>Télécharger Git :</strong></p>
+<ul class="simple">
+<li><p>Rendez-vous sur le <a class="reference external" href="https://git-scm.com/downloads/win">site officiel de Git</a> pour télécharger la dernière version.</p></li>
+<li><p>Téléchargez la version correspondant à votre système, généralement <strong>64-bit Git for Windows Setup</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Installer Git :</strong></p>
+<ul class="simple">
+<li><p>Lancez l’exécutable téléchargé.</p></li>
+<li><p>Suivez les étapes de l’installation par défaut en cliquant sur <strong>Suivant</strong> jusqu’à la fin.</p></li>
+</ul>
+</li>
+<li><p><strong>Configurer Git pour Windows :</strong></p>
+<ul>
+<li><p>Une fois l’installation terminée, ouvrez une invite de commande (CMD ou PowerShell).</p></li>
+<li><p>Configurez votre nom et votre e-mail pour Git en exécutant les commandes suivantes :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;VotreNom&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;VotreEmail@example.com&quot;</span>
 </pre></div>
 </div>
+</li>
+</ul>
+</li>
+<li><p><strong>Gérer les erreurs courantes :</strong></p>
+<ul>
+<li><p>Si, lors d’un <cite>git pull</cite>, vous rencontrez l’erreur suivante :</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">fatal:</span> <span class="pre">filename</span> <span class="pre">too</span> <span class="pre">long</span>
+<span class="pre">`</span></code></p>
+<p>Cela signifie que Windows ne peut pas gérer des chemins de fichiers dépassant 260 caractères. Pour corriger cela, exécutez la commande suivante :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--system<span class="w"> </span>core.longpaths<span class="w"> </span><span class="nb">true</span>
+</pre></div>
+</div>
+</li>
+<li><p>Cette commande permet à Git de prendre en charge les chemins de fichiers longs sous Windows.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="visualiser-la-documentation-en-ligne">
+<h3>Visualiser la documentation en ligne<a class="headerlink" href="#visualiser-la-documentation-en-ligne" title="Lien vers cette rubrique"></a></h3>
+<p>Après la création et le déploiement de la documentation via GitHub Pages, suivez ces étapes pour la visualiser en ligne :</p>
+<ol class="arabic">
+<li><p><strong>Depuis l’onglet Actions :</strong></p>
+<ul class="simple">
+<li><p>Accédez à votre projet sur GitHub.</p></li>
+<li><p>Cliquez sur l’onglet <strong>Actions</strong>.</p></li>
+<li><p>Recherchez le workflow intitulé <strong>Page build and deployment</strong> et cliquer dessus, votre lien devrait apparaître.</p></li>
+<li><p>Vérifiez que le statut indique <strong>Deploy succeeded</strong> pour confirmer que la documentation a été déployée avec succès.</p></li>
+</ul>
+</li>
+<li><p><strong>Depuis les paramètres du projet :</strong></p>
+<ul class="simple">
+<li><p>Accédez à votre projet sur GitHub.</p></li>
+<li><p>Cliquez sur l’onglet <strong>Settings</strong>.</p></li>
+<li><p>Dans le menu latéral, sous la section <strong>Code and automation</strong>, cliquez sur <strong>Pages</strong>.</p></li>
+<li><p>Vous trouverez un lien vers la documentation déployée sous la section <strong>GitHub Pages</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Lien direct :</strong></p>
+<p>Une fois configurée, la documentation est accessible à l’adresse suivante :</p>
+<ul class="simple">
+<li><p><cite>https://&lt;username&gt;.github.io/&lt;repository-name&gt;/</cite></p></li>
+<li><p>Remplacez <cite>&lt;username&gt;</cite> par votre nom d’utilisateur GitHub et <cite>&lt;repository-name&gt;</cite> par le nom de votre projet.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="inviter-des-collaborateurs-sur-un-projet">
+<h3>Inviter des collaborateurs sur un projet<a class="headerlink" href="#inviter-des-collaborateurs-sur-un-projet" title="Lien vers cette rubrique"></a></h3>
+<p>Pour inviter des collaborateurs à participer à votre projet sur GitHub, suivez ces étapes :</p>
+<ol class="arabic simple">
+<li><p><strong>Accéder aux paramètres du projet :</strong></p>
+<ul class="simple">
+<li><p>Ouvrez votre projet sur GitHub.</p></li>
+<li><p>Cliquez sur l’onglet <strong>Settings</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Rechercher et ajouter :</strong></p>
+<ul class="simple">
+<li><p>Dans le menu latéral, sous la section <strong>Access</strong>, cliquez sur <strong>Collaborators</strong>.</p></li>
+<li><p>Cliquez sur le bouton <strong>Add people</strong> pour inviter des collaborateurs.</p></li>
+<li><p>Entrez le nom d’utilisateur ou l’adresse e-mail GitHub du collaborateur que vous souhaitez inviter.</p></li>
+<li><p>Cliquez sur <strong>Add</strong> pour envoyer l’invitation.</p></li>
+</ul>
+</li>
+<li><p><strong>Confirmer l’invitation :</strong></p>
+<ul class="simple">
+<li><p>Une fois l’invitation envoyée, le collaborateur recevra un e-mail avec un lien pour accepter.</p></li>
+<li><p>Une fois accepté, il apparaîtra dans la liste des collaborateurs de votre projet.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour supprimer un collaborateur, cliquez sur l’icône <strong>Trash</strong> à côté de son nom.</p>
+</div>
+</section>
+<section id="mettre-a-jour-un-fork-realise-sur-github">
+<h3>Mettre à jour un fork réalisé sur GitHub<a class="headerlink" href="#mettre-a-jour-un-fork-realise-sur-github" title="Lien vers cette rubrique"></a></h3>
+<p>Pour synchroniser un fork avec le dépôt d’origine sur GitHub, suivez les étapes ci-dessous :</p>
+<ol class="arabic">
+<li><p><strong>Vérifier la configuration des remotes :</strong></p>
+<ul>
+<li><p>Ouvrez un terminal et naviguez dans le dossier de votre projet.</p></li>
+<li><p>Vérifiez si le remote <cite>upstream</cite> est déjà configuré :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>-v
+</pre></div>
+</div>
+</li>
+<li><p>Si <cite>upstream</cite> n’est pas listé, ajoutez-le avec la commande suivante :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>git@github.com:<span class="o">[</span>nom_utilisateur<span class="o">]</span>/<span class="o">[</span>nom_dépôt_initial<span class="o">]</span>.git
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Récupérer les mises à jour depuis le dépôt original :</strong></p>
+<ul>
+<li><p>Téléchargez les nouvelles données depuis le dépôt <cite>upstream</cite> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>fetch<span class="w"> </span>upstream
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Rebaser votre branche locale sur la branche distante :</strong></p>
+<ul>
+<li><p>Intégrez les modifications de la branche distante (<cite>rolling</cite>, dans ce cas) dans votre branche locale :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>rebase<span class="w"> </span>upstream/rolling
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Configurer Git pour les futures synchronisations :</strong></p>
+<ul>
+<li><p>Configurez Git pour utiliser le mode <cite>rebase</cite> par défaut lors d’un pull, afin de réconcilier les branches proprement :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>pull.rebase<span class="w"> </span><span class="nb">true</span>
+</pre></div>
+</div>
+</li>
+<li><p>Ensuite, synchronisez avec les dernières modifications :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>pull
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
 </section>
 </section>
 <section id="visualiser-sa-documentation-en-local">
-<h2>Visualiser sa documentation en local<a class="headerlink" href="#visualiser-sa-documentation-en-local" title="Lien vers cette rubrique"></a></h2>
+<h2>2. Visualiser sa documentation en local<a class="headerlink" href="#visualiser-sa-documentation-en-local" title="Lien vers cette rubrique"></a></h2>
 <p>Pour visualiser votre documentation en local, deux possibilités s’offrent à vous :</p>
-<section id="premiere-possibilite-installer-et-configurer-esbonio">
-<h3>Première possibilité : Installer et configurer Esbonio<a class="headerlink" href="#premiere-possibilite-installer-et-configurer-esbonio" title="Lien vers cette rubrique"></a></h3>
-<ol class="arabic">
-<li><p><strong>Installer Esbonio</strong> :</p>
 <blockquote>
-<div><ul class="simple">
+<div><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Première possibilité : Installer et configurer Esbonio</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Seconde possibilité : Générer directement un fichier .html local</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><ol class="arabic">
+<li><p><strong>Installer Esbonio</strong> :</p>
+<ul class="simple">
 <li><p>Ouvrez <strong>Visual Studio Code</strong>.</p></li>
 <li><p>Accédez à l’onglet des <strong>extensions</strong> (raccourci : <cite>Ctrl+Shift+X</cite>).</p></li>
 <li><p>Recherchez l’extension <strong>Esbonio</strong> et cliquez sur <strong>Installer</strong>.</p></li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><strong>Configurer les extensions nécessaires</strong> :</p>
 <ul class="simple">
@@ -231,11 +380,13 @@ Pour l’installer, exécutez la commande suivante dans un terminal :</p>
 <li><p>Si la commande <cite>python.exe</cite> n’est pas reconnue :</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Téléchargez et installez Python</strong> :
-Rendez-vous sur le site officiel : <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p></li>
-<li><p><strong>Cochez l’option « Add Python to PATH »</strong> :
-Lors de l’installation, assurez-vous de cocher cette option. Cela permet de rendre l’exécutable Python accessible globalement depuis n’importe quel terminal. Vous pourrez alors exécuter des commandes comme <cite>python</cite> ou <cite>pip</cite> sans avoir à spécifier le chemin complet vers l’installation Python.</p></li>
+<li><p><strong>Téléchargez et installez Python</strong> :</p></li>
 </ul>
+<p>Rendez-vous sur le <a class="reference external" href="https://www.python.org/downloads/">site officiel de Python</a> pour télécharger la dernière version.</p>
+<ul class="simple">
+<li><p><strong>Cochez l’option « Add Python to PATH »</strong> :</p></li>
+</ul>
+<p>Lors de l’installation, assurez-vous de cocher cette option. Cela permet de rendre l’exécutable Python accessible globalement depuis n’importe quel terminal. Vous pourrez alors exécuter des commandes comme <cite>python</cite> ou <cite>pip</cite> sans avoir à spécifier le chemin complet vers l’installation Python.</p>
 </div></blockquote>
 </li>
 </ul>
@@ -244,8 +395,7 @@ Lors de l’installation, assurez-vous de cocher cette option. Cela permet de re
 <p>Si les extensions ne sont pas prises en compte immédiatement :</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Ouvrez la palette de commande avec <cite>Ctrl+Shift+P</cite>.
-Rendez-vous sur le site officiel : <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p></li>
+<li><p>Ouvrez la palette de commande avec <cite>Ctrl+Shift+P</cite>.</p></li>
 <li><p>Tapez et sélectionnez <strong>Developer: Reload Window</strong>.</p></li>
 </ul>
 </div></blockquote>
@@ -259,10 +409,7 @@ Rendez-vous sur le site officiel : <a class="reference external" href="https://w
 </ul>
 </li>
 </ol>
-</section>
-<section id="seconde-possibilite-generer-directement-un-fichier-html-local">
-<h3>Seconde possibilité : Générer directement un fichier .html local<a class="headerlink" href="#seconde-possibilite-generer-directement-un-fichier-html-local" title="Lien vers cette rubrique"></a></h3>
-<p>Vous pouvez générer directement votre documentation au format HTML en utilisant <strong>Sphinx</strong>. Cette méthode crée des fichiers HTML statiques qui peuvent être ouverts dans n’importe quel navigateur.</p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Vous pouvez générer directement votre documentation au format HTML en utilisant <strong>Sphinx</strong>. Cette méthode crée des fichiers HTML statiques qui peuvent être ouverts dans n’importe quel navigateur.</p>
 <ol class="arabic">
 <li><p><strong>Accédez au répertoire source de votre projet</strong> :</p>
 <ul class="simple">
@@ -271,70 +418,56 @@ Rendez-vous sur le site officiel : <a class="reference external" href="https://w
 </ul>
 </li>
 <li><p><strong>Exécutez la commande de génération</strong> :</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Utilisez la commande suivante pour générer les fichiers HTML dans un répertoire <cite>build/</cite> :
-<code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span> <span class="pre">source/</span> <span class="pre">build/</span>
-<span class="pre">`</span></code></p></li>
+<ul class="simple">
+<li><p>Utilisez la commande suivante pour générer les fichiers HTML dans un répertoire <cite>build/</cite> :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>source/<span class="w"> </span>build/
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Des avertissements peuvent apparaître, comme par exemple des fichiers .rst n’apparaissant pas dans un index, mais ils ne devraient pas empêcher la génération de la documentation.</p></li>
 <li><p>Explications des arguments :</p></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
 <li><p><cite>-b html</cite> : Spécifie que vous voulez générer une sortie au format HTML.</p></li>
 <li><p><cite>source/</cite> : Répertoire où sont stockés vos fichiers <cite>.rst</cite>.</p></li>
 <li><p><cite>build/</cite> : Répertoire de sortie où les fichiers HTML seront enregistrés.</p></li>
 </ul>
-</div></blockquote>
-</div></blockquote>
 </li>
 <li><p><strong>Ouvrez le fichier HTML généré</strong> :</p>
 <ul class="simple">
 <li><p>Une fois la génération terminée, ouvrez le fichier <cite>index.html</cite> situé dans le répertoire <cite>build/</cite> avec votre navigateur préféré.</p></li>
-<li><p>Si vous êtes sous Linux ou macOS, vous pouvez utiliser une commande comme celle-ci :
-<code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">xdg-open</span> <span class="pre">build/index.html</span>
-<span class="pre">`</span></code></p></li>
+<li><p>Si vous êtes sous Linux ou macOS, vous pouvez utiliser une commande comme celle-ci :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>xdg-open<span class="w"> </span>build/index.html
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Sous Windows, naviguez jusqu’au répertoire <cite>build/</cite> avec l’explorateur de fichiers, puis double-cliquez sur <cite>index.html</cite>.</p></li>
 </ul>
 </li>
 <li><p><strong>Modifications ultérieures</strong> :</p>
 <ul class="simple">
-<li><p>Si vous modifiez vos fichiers <cite>.rst</cite>, vous devez régénérer la documentation en exécutant de nouveau la commande :
-<code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span> <span class="pre">source/</span> <span class="pre">build/</span>
-<span class="pre">`</span></code></p></li>
+<li><p>Si vous modifiez vos fichiers <cite>.rst</cite>, vous devez régénérer la documentation en exécutant de nouveau la commande :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>source/<span class="w"> </span>build/
+</pre></div>
+</div>
+<ul class="simple">
 <li><p>Cette étape garantit que les fichiers HTML reflètent les changements récents.</p></li>
 </ul>
 </li>
 </ol>
-<p><strong>Utilisation de GitHub :</strong></p>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
-<li><p>Après avoir créé le dépôt, visualisez la documentation via :</p>
-<ul>
-<li><p>Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.</p></li>
-<li><p>Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
-</ul>
-</li>
-</ul>
+</div></div>
 </div></blockquote>
-<ul>
-<li><p>Pour mettre à jour un fork déjà réalisé :</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Vérifier si il y a un upstream -&gt; git remote -v</p></li>
-<li><p>Si aucun upstream est présent, il faut le créer : git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:yguel/informatique_industrielle_avec_ROS2.git</p></li>
-<li><p>Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream</p></li>
-<li><p>Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -&gt; git rebase upstream/rolling</p></li>
-<li><p>Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-</div></blockquote>
+</section>
+<section id="applications-ou-extensions-optionnelles">
+<h2>3. Applications ou extensions optionnelles<a class="headerlink" href="#applications-ou-extensions-optionnelles" title="Lien vers cette rubrique"></a></h2>
+<section id="captures-d-ecran">
+<h3>Captures d’écran<a class="headerlink" href="#captures-d-ecran" title="Lien vers cette rubrique"></a></h3>
+<p>Si vous souhaitez réaliser des captures d’écran sur <strong>Ubuntu 24.04</strong>, vous pouvez utiliser le logiciel <strong>Shutter</strong>.
+Pour l’installer, exécutez la commande suivante dans un terminal :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>shutter
+</pre></div>
+</div>
 </section>
 </section>
 </section>
@@ -344,7 +477,7 @@ Rendez-vous sur le site officiel : <a class="reference external" href="https://w
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
         <a href="a00s01_prise_main_materiel.html" class="btn btn-neutral float-left" title="Prise en main du matériel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
-        <a href="a00s02_dynamixel.html" class="btn btn-neutral float-right" title="Premier pas avec les Dynamixel" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="a00s02_dynamixel.html" class="btn btn-neutral float-right" title="Premier pas avec les moteurs Dynamixel" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

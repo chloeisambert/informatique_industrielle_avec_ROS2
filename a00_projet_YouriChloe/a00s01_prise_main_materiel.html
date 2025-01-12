@@ -68,12 +68,16 @@
 <li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Prise en main du matériel</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#preparation-du-materiel">1. Préparation du matériel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#installer-l-os">2. Installer l’OS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#installer-ros2">3. Installer ROS2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preparation-pour-installation-de-l-os">2. Préparation pour installation de l’OS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-d-ubuntu-et-mise-en-place-du-systeme">3. Installation d’Ubuntu et mise en place du système</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#installation-de-l-os">Installation de l’OS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration-du-systeme-pour-ce-projet">Configuration du système pour ce projet</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="a00s01bis_tipstools.html">Astuces et outils</a></li>
-<li class="toctree-l2"><a class="reference internal" href="a00s02_dynamixel.html">Premier pas avec les Dynamixel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a00s02_dynamixel.html">Premier pas avec les moteurs Dynamixel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a00s03_pentograph.html">Utilisation et commande du pantographe</a></li>
 </ul>
 </li>
@@ -106,6 +110,7 @@
              
   <section id="prise-en-main-du-materiel">
 <h1>Prise en main du matériel<a class="headerlink" href="#prise-en-main-du-materiel" title="Lien vers cette rubrique"></a></h1>
+<p>Cette section présente les composants essentiels nécessaires pour configurer un système performant basé sur le Raspberry Pi 5. Chaque élément est choisi pour maximiser les capacités de calcul, de stockage et de refroidissement du système.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/raspberry.jpg"><img alt="../_images/raspberry.jpg" src="../_images/raspberry.jpg" style="width: 30%;" />
 </a>
@@ -113,6 +118,8 @@
 <p><span class="caption-text">Carte Raspberry Pi 5</span><a class="headerlink" href="#id1" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
+<p>La <strong>carte Raspberry Pi 5</strong> est équipée d’un processeur ARM Cortex-A76 quadricœur cadencé à 2,4 GHz, offrant une augmentation significative des performances par rapport aux générations précédentes. Elle prend en charge jusqu’à 8 Go de RAM LPDDR4X, la rendant idéale pour les applications gourmandes en ressources, comme la robotique ou l’IA.</p>
+<p>—</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/disquedur.jpg"><img alt="../_images/disquedur.jpg" src="../_images/disquedur.jpg" style="width: 30%;" />
 </a>
@@ -120,6 +127,8 @@
 <p><span class="caption-text">Disque dur ADATA</span><a class="headerlink" href="#id2" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
+<p>Le <strong>disque dur ADATA Legend 700 NVMe</strong> de 256 Go garantit une vitesse de lecture/écriture pouvant atteindre 2000 Mo/s, idéale pour les systèmes d’exploitation, les bases de données ou les projets nécessitant des temps de chargement rapides. Ce disque SSD compact et performant est compatible avec le port NVMe de la carte base.</p>
+<p>—</p>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/NVMeBase.jpg"><img alt="../_images/NVMeBase.jpg" src="../_images/NVMeBase.jpg" style="width: 30%;" />
 </a>
@@ -127,13 +136,48 @@
 <p><span class="caption-text">Carte base NVMe</span><a class="headerlink" href="#id3" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
+<p>La <strong>carte base NVMe</strong> agit comme un adaptateur entre le Raspberry Pi 5 et le disque dur NVMe, assurant une connexion fiable et des performances maximales. Elle inclut un support de montage et des vis pour une installation facile et sécurisée.</p>
+<p>—</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../_images/radiateur.jpg"><img alt="../_images/radiateur.jpg" src="../_images/radiateur.jpg" style="width: 30%;" />
+<a class="reference internal image-reference" href="../_images/radiateur_rogne.png"><img alt="../_images/radiateur_rogne.png" src="../_images/radiateur_rogne.png" style="width: 30%;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Radiateur pour Raspberry</span><a class="headerlink" href="#id4" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
+<p>Le <strong>radiateur actif pour Raspberry Pi 5</strong> est équipé d’un ventilateur intégré et de larges ailettes pour une dissipation thermique efficace. Conçu pour les charges de travail prolongées, il maintient les températures du processeur en dessous de 50 °C, garantissant une performance constante sans risque de throttling.</p>
+<p>—</p>
+<ul class="simple">
+<li><p>Spécifications des composants :</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>Raspberry Pi 5</strong> :</p>
+<ul>
+<li><p>Processeur : ARM Cortex-A76 quadricœur 2,4 GHz.</p></li>
+<li><p>Mémoire : jusqu’à 8 Go LPDDR4X.</p></li>
+<li><p>Connectivité : 2 ports USB 3.0, 2 ports micro-HDMI, Ethernet Gigabit.</p></li>
+</ul>
+</li>
+<li><p><strong>Disque dur NVMe ADATA Legend 700</strong> :</p>
+<ul>
+<li><p>Capacité : 256 Go.</p></li>
+<li><p>Interface : PCIe Gen3 x4.</p></li>
+<li><p>Performances : Lecture/écriture jusqu’à 2000 Mo/s.</p></li>
+</ul>
+</li>
+<li><p><strong>Carte base NVMe</strong> :</p>
+<ul>
+<li><p>Interface : Compatible avec le port PCIe de la Raspberry Pi 5.</p></li>
+<li><p>Accessoires inclus : Support de montage, vis.</p></li>
+</ul>
+</li>
+<li><p><strong>Radiateur pour Raspberry</strong> :</p>
+<ul>
+<li><p>Matériau : Aluminium avec ventilateur intégré.</p></li>
+<li><p>Usage : Dissipation thermique active pour applications intensives.</p></li>
+</ul>
+</li>
+</ul>
 <section id="preparation-du-materiel">
 <h2>1. Préparation du matériel<a class="headerlink" href="#preparation-du-materiel" title="Lien vers cette rubrique"></a></h2>
 <ul>
@@ -183,8 +227,8 @@
 </figcaption>
 </figure>
 </section>
-<section id="installer-l-os">
-<h2>2. Installer l’OS<a class="headerlink" href="#installer-l-os" title="Lien vers cette rubrique"></a></h2>
+<section id="preparation-pour-installation-de-l-os">
+<h2>2. Préparation pour installation de l’OS<a class="headerlink" href="#preparation-pour-installation-de-l-os" title="Lien vers cette rubrique"></a></h2>
 <p><strong>Préparation initiale :</strong></p>
 <blockquote>
 <div><ul>
@@ -219,7 +263,11 @@
 <p><strong>Partitionnement du disque dur :</strong></p>
 <blockquote>
 <div><ul>
-<li><p>Installer l’outil GParted : <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">gparted</span></code>.</p></li>
+<li><p>Installer l’outil GParted :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>gparted
+</pre></div>
+</div>
+</li>
 <li><p>Ouvrir GParted (Menu -&gt; Outil système).</p></li>
 <li><p>Sélectionner en haut à droite : <cite>/dev/nvme0n1</cite>.</p></li>
 <li><p>Créez une table de partition (type : msdos).</p></li>
@@ -242,7 +290,11 @@
 <p><span class="caption-text">Interface de GParted</span><a class="headerlink" href="#id9" title="Lien vers cette image"></a></p>
 </figcaption>
 </figure>
-<p><strong>Installer Ubuntu LTS 24.04 :</strong></p>
+</section>
+<section id="installation-d-ubuntu-et-mise-en-place-du-systeme">
+<h2>3. Installation d’Ubuntu et mise en place du système<a class="headerlink" href="#installation-d-ubuntu-et-mise-en-place-du-systeme" title="Lien vers cette rubrique"></a></h2>
+<section id="installation-de-l-os">
+<h3>Installation de l’OS<a class="headerlink" href="#installation-de-l-os" title="Lien vers cette rubrique"></a></h3>
 <blockquote>
 <div><ul>
 <li><p>Utiliser l’Imager pour sélectionner :</p>
@@ -259,9 +311,103 @@
 </ul>
 </div></blockquote>
 </section>
-<section id="installer-ros2">
-<h2>3. Installer ROS2<a class="headerlink" href="#installer-ros2" title="Lien vers cette rubrique"></a></h2>
-<p>A COMPLETERR</p>
+<section id="configuration-du-systeme-pour-ce-projet">
+<h3>Configuration du système pour ce projet<a class="headerlink" href="#configuration-du-systeme-pour-ce-projet" title="Lien vers cette rubrique"></a></h3>
+<ul>
+<li><p>Pour créer un nouvel utilisateur dans Ubuntu 24.04, suivez les étapes suivantes :</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p><strong>Connexion à l’utilisateur existant :</strong></p>
+<ul class="simple">
+<li><p>Connectez-vous avec l’utilisateur par défaut : <strong>« pi »</strong>.</p></li>
+<li><p>Utilisez le mot de passe associé : <strong>« ros2insa »</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Accéder aux paramètres système :</strong></p>
+<ul class="simple">
+<li><p>Ouvrez le menu <strong>Settings</strong> (Paramètres).</p></li>
+<li><p>Naviguez jusqu’à la section <strong>System</strong> (Système).</p></li>
+<li><p>Cliquez sur <strong>Users</strong> (Utilisateurs).</p></li>
+</ul>
+</li>
+<li><p><strong>Déverrouiller la gestion des utilisateurs :</strong></p>
+<ul class="simple">
+<li><p>Cliquez sur le bouton <strong>Unlock</strong> (Déverrouiller) dans la section des utilisateurs.</p></li>
+<li><p>Saisissez le mot de passe de l’utilisateur actuel (<strong>ros2insa</strong>) pour autoriser les modifications.</p></li>
+</ul>
+</li>
+<li><p><strong>Ajouter un nouvel utilisateur :</strong></p>
+<ul class="simple">
+<li><p>En bas de la fenêtre, cliquez sur <strong>Add User…</strong> (Ajouter un utilisateur).</p></li>
+<li><p>Remplissez les informations demandées pour le nouvel utilisateur :
+- Nom complet.
+- Nom d’utilisateur.
+- Mot de passe souhaité.</p></li>
+</ul>
+</li>
+<li><p><strong>Attribuer les privilèges d’administrateur :</strong></p>
+<ul class="simple">
+<li><p>Cochez la case <strong>Administrator</strong> (Administrateur) avant de valider.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Important</strong> : Cette étape garantit que l’utilisateur nouvellement créé dispose des droits nécessaires pour gérer le système.</p>
+</div>
+</li>
+<li><p><strong>Finalisation :</strong></p>
+<ul class="simple">
+<li><p>Cliquez sur <strong>Add</strong> (Ajouter) pour finaliser la création de l’utilisateur.</p></li>
+<li><p>Vérifiez que le nouvel utilisateur apparaît dans la liste des utilisateurs et qu’il est bien marqué comme administrateur.</p></li>
+</ul>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Installation de VSCode :</p>
+<blockquote>
+<div><ul>
+<li><p>Ouvrez un terminal et exécutez les commandes suivantes :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>code
+</pre></div>
+</div>
+</li>
+<li><p>Lancez VSCode en tapant <code class="docutils literal notranslate"><span class="pre">code</span></code> dans le terminal.</p></li>
+<li><p>Installez les extensions recommandées pour Python et C++.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Installation de ROS2</p>
+<blockquote>
+<div><p>Pour installer ROS2 Jazzy sur un système Ubuntu, suivez les étapes ci-dessous :</p>
+<ol class="arabic">
+<li><p><strong>Mettre à jour le cache des dépôts APT :</strong></p>
+<p>Avant de procéder à l’installation, assurez-vous que votre système dispose des dernières informations sur les paquets disponibles :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</pre></div>
+</div>
+</li>
+<li><p><strong>Installer ROS2 Jazzy :</strong></p>
+<ul class="simple">
+<li><p>Cette option installe l’ensemble des outils ROS2, y compris <strong>RViz</strong>, les démos et les tutoriels :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-jazzy-desktop
+</pre></div>
+</div>
+</li>
+<li><p><strong>Installation minimale de ROS2 Jazzy (ROS-Base) :</strong></p>
+<ul class="simple">
+<li><p>Cette option installe uniquement les bibliothèques de communication, les paquets de messages et les outils en ligne de commande. Aucun outil graphique n’est inclus :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-jazzy-ros-base
+</pre></div>
+</div>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</section>
 </section>
 </section>
 
