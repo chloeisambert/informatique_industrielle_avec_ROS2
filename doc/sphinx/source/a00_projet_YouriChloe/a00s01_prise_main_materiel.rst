@@ -123,28 +123,5 @@ Prise en main du matériel
 3. Installer ROS2
 =================
 
-A COMPLETER
+A COMPLETERR
 
-
-4. Outils
-=========
-
-**Captures d'écran :**
- Utiliser le logiciel Shutter : ``sudo apt-get install shutter``.
-
-**Utilisation de GitHub :**
-
-   - Après avoir créé le dépôt, visualisez la documentation via :
-  
-     - Le projet -> Actions -> *Page Build and Deployment* -> *Deploy*.
-     - Ou bien via : Le projet -> *Settings* -> *Pages*.
-
-  - Pour mettre à jour un fork déjà réalisé :
-  
-     - Vérifier si il y a un upstream -> git remote -v
-     - Si aucun upstream est présent, il faut le créer : git remote add upstream git@github.com:yguel/informatique_industrielle_avec_ROS2.git
-     - Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream
-     - Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -> git rebase upstream/rolling
-     - Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull
-  
-  
