@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astuces et outils &mdash; Documentation Cours d&#39;Informatique Industrielle avec ROS2 1.0.0</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fdcf8bf8" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=05dadb3a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=30646c52"></script>
+      <script src="../_static/translations.js?v=e6b791cb"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Premier pas avec les Dynamixel" href="a00s02_dynamixel.html" />
+    <link rel="prev" title="Prise en main du matériel" href="a00s01_prise_main_materiel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Cours d'Informatique Industrielle avec ROS2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Informatique Industrielle &amp; ROS2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../c00_introduction/p00s00_index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c01_create_and_publish_doc/p01s00_index.html">Premier projet &amp; doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c02_first_ros2_project_pimped/p02s00_index.html">Tutoriel ROS2 épicé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c03_test_your_code/p03s00_index.html">Tester le code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../c04_collaborate_with_coders/p04s00_index.html">Les outils nécessaires pour collaborer entre codeurs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Travaux Pratiques</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../p00_pentograph_pencil_holder_with_rpi_and_dynamixel/p50s00_index.html">Pantographe de dessin robotisé avec Raspberry Pi et ROS2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../p01_rpi_ubuntu_as_a_ros2_robotic_platform/p51s00_index.html">Ubuntu &amp; RPi &amp; ROS2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projet Youri et Chloé</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="a00s01_prise_main_materiel.html">Prise en main du matériel</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Astuces et outils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#applications-ou-extensions-optionnelles">Applications ou extensions optionnelles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#captures-d-ecran">Captures d’écran</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#visualiser-sa-documentation-en-local">Visualiser sa documentation en local</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#premiere-possibilite-installer-et-configurer-esbonio">Première possibilité : Installer et configurer Esbonio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#seconde-possibilite-generer-directement-un-fichier-html-local">Seconde possibilité : Générer directement un fichier .html local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="a00s02_dynamixel.html">Premier pas avec les Dynamixel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a00s03_pentograph.html">Utilisation et commande du pantographe</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Cours d'Informatique Industrielle avec ROS2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="a00s00_index.html">Documentation du projet d’Informatique Industrielle</a></li>
+      <li class="breadcrumb-item active">Astuces et outils</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/a00_projet_YouriChloe/a00s01bis_tipstools.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="astuces-et-outils">
+<h1>Astuces et outils<a class="headerlink" href="#astuces-et-outils" title="Lien vers cette rubrique"></a></h1>
+<section id="applications-ou-extensions-optionnelles">
+<h2>Applications ou extensions optionnelles<a class="headerlink" href="#applications-ou-extensions-optionnelles" title="Lien vers cette rubrique"></a></h2>
+<section id="captures-d-ecran">
+<h3>Captures d’écran<a class="headerlink" href="#captures-d-ecran" title="Lien vers cette rubrique"></a></h3>
+<p>Si vous souhaitez réaliser des captures d’écran sur <strong>Ubuntu 20.04</strong>, vous pouvez utiliser le logiciel <strong>Shutter</strong>.
+Pour l’installer, exécutez la commande suivante dans un terminal :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>shutter
+</pre></div>
+</div>
+</section>
+</section>
+<section id="visualiser-sa-documentation-en-local">
+<h2>Visualiser sa documentation en local<a class="headerlink" href="#visualiser-sa-documentation-en-local" title="Lien vers cette rubrique"></a></h2>
+<p>Pour visualiser votre documentation en local, deux possibilités s’offrent à vous :</p>
+<section id="premiere-possibilite-installer-et-configurer-esbonio">
+<h3>Première possibilité : Installer et configurer Esbonio<a class="headerlink" href="#premiere-possibilite-installer-et-configurer-esbonio" title="Lien vers cette rubrique"></a></h3>
+<ol class="arabic">
+<li><p><strong>Installer Esbonio</strong> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ouvrez <strong>Visual Studio Code</strong>.</p></li>
+<li><p>Accédez à l’onglet des <strong>extensions</strong> (raccourci : <cite>Ctrl+Shift+X</cite>).</p></li>
+<li><p>Recherchez l’extension <strong>Esbonio</strong> et cliquez sur <strong>Installer</strong>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Configurer les extensions nécessaires</strong> :</p>
+<ul class="simple">
+<li><p>Ouvrez un terminal intégré dans VSCode via <strong>Terminal &gt; New Terminal</strong> ou utilisez le raccourci <cite>Ctrl+`</cite>.</p></li>
+<li><p>Installez les extensions Python requises dans le fichier <cite>requirements.txt</cite> en exécutant la commande suivante :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python.exe<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Si cela ne fonctionne pas, installer manuellement chaque extension présent dans <cite>requirements.txt</cite> avec la commande suivante :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python.exe<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;nom extension&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Dans le cas de cette documentation, une extension « mistune &lt; 1.0.0 » est présente. Cela indique que nous utilisons une version inférieure à 1.0.0 de l’extension mistune. Pour l’installer, exécutez la commande suivante :</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python.exe<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;mistune&lt;1.0.0&quot;</span>
+</pre></div>
+</div>
+<ul>
+<li><p>Si la commande <cite>python.exe</cite> n’est pas reconnue :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Téléchargez et installez Python</strong> :
+Rendez-vous sur le site officiel : <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p></li>
+<li><p><strong>Cochez l’option « Add Python to PATH »</strong> :
+Lors de l’installation, assurez-vous de cocher cette option. Cela permet de rendre l’exécutable Python accessible globalement depuis n’importe quel terminal. Vous pourrez alors exécuter des commandes comme <cite>python</cite> ou <cite>pip</cite> sans avoir à spécifier le chemin complet vers l’installation Python.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p><strong>Rechargez VSCode</strong> :</p>
+<p>Si les extensions ne sont pas prises en compte immédiatement :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ouvrez la palette de commande avec <cite>Ctrl+Shift+P</cite>.
+Rendez-vous sur le site officiel : <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p></li>
+<li><p>Tapez et sélectionnez <strong>Developer: Reload Window</strong>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Prévisualiser votre documentation</strong> :</p>
+<ul class="simple">
+<li><p>Ouvrez un fichier <cite>.rst</cite> dans VSCode.</p></li>
+<li><p>Accédez à la palette de commande avec <cite>Ctrl+Shift+P</cite>.</p></li>
+<li><p>Tapez et sélectionnez <strong>Esbonio: Open preview to the side</strong>.</p></li>
+<li><p>Une fenêtre de prévisualisation s’ouvrira pour afficher la documentation générée.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="seconde-possibilite-generer-directement-un-fichier-html-local">
+<h3>Seconde possibilité : Générer directement un fichier .html local<a class="headerlink" href="#seconde-possibilite-generer-directement-un-fichier-html-local" title="Lien vers cette rubrique"></a></h3>
+<p>Vous pouvez générer directement votre documentation au format HTML en utilisant <strong>Sphinx</strong>. Cette méthode crée des fichiers HTML statiques qui peuvent être ouverts dans n’importe quel navigateur.</p>
+<ol class="arabic">
+<li><p><strong>Accédez au répertoire source de votre projet</strong> :</p>
+<ul class="simple">
+<li><p>Assurez-vous que vous êtes dans le répertoire contenant vos fichiers de documentation (<cite>source/</cite>).</p></li>
+<li><p>Si vous utilisez un terminal intégré dans VSCode, ouvrez-le via <strong>Terminal &gt; New Terminal</strong> ou utilisez le raccourci <cite>Ctrl+`</cite> (backtick).</p></li>
+</ul>
+</li>
+<li><p><strong>Exécutez la commande de génération</strong> :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Utilisez la commande suivante pour générer les fichiers HTML dans un répertoire <cite>build/</cite> :
+<code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span> <span class="pre">source/</span> <span class="pre">build/</span>
+<span class="pre">`</span></code></p></li>
+<li><p>Des avertissements peuvent apparaître, comme par exemple des fichiers .rst n’apparaissant pas dans un index, mais ils ne devraient pas empêcher la génération de la documentation.</p></li>
+<li><p>Explications des arguments :</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>-b html</cite> : Spécifie que vous voulez générer une sortie au format HTML.</p></li>
+<li><p><cite>source/</cite> : Répertoire où sont stockés vos fichiers <cite>.rst</cite>.</p></li>
+<li><p><cite>build/</cite> : Répertoire de sortie où les fichiers HTML seront enregistrés.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p><strong>Ouvrez le fichier HTML généré</strong> :</p>
+<ul class="simple">
+<li><p>Une fois la génération terminée, ouvrez le fichier <cite>index.html</cite> situé dans le répertoire <cite>build/</cite> avec votre navigateur préféré.</p></li>
+<li><p>Si vous êtes sous Linux ou macOS, vous pouvez utiliser une commande comme celle-ci :
+<code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">xdg-open</span> <span class="pre">build/index.html</span>
+<span class="pre">`</span></code></p></li>
+<li><p>Sous Windows, naviguez jusqu’au répertoire <cite>build/</cite> avec l’explorateur de fichiers, puis double-cliquez sur <cite>index.html</cite>.</p></li>
+</ul>
+</li>
+<li><p><strong>Modifications ultérieures</strong> :</p>
+<ul class="simple">
+<li><p>Si vous modifiez vos fichiers <cite>.rst</cite>, vous devez régénérer la documentation en exécutant de nouveau la commande :
+<code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span> <span class="pre">source/</span> <span class="pre">build/</span>
+<span class="pre">`</span></code></p></li>
+<li><p>Cette étape garantit que les fichiers HTML reflètent les changements récents.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Utilisation de GitHub :</strong></p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p>Après avoir créé le dépôt, visualisez la documentation via :</p>
+<ul>
+<li><p>Le projet -&gt; Actions -&gt; <em>Page Build and Deployment</em> -&gt; <em>Deploy</em>.</p></li>
+<li><p>Ou bien via : Le projet -&gt; <em>Settings</em> -&gt; <em>Pages</em>.</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p>Pour mettre à jour un fork déjà réalisé :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vérifier si il y a un upstream -&gt; git remote -v</p></li>
+<li><p>Si aucun upstream est présent, il faut le créer : git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:yguel/informatique_industrielle_avec_ROS2.git</p></li>
+<li><p>Ensuite il faut récupérer sur cette branche les nouvelles données : git fetch upstream</p></li>
+<li><p>Pour conclure, il faut rebase la nouvelle branche vers la notre (rolling dans notre cas) -&gt; git rebase upstream/rolling</p></li>
+<li><p>Pour obtenir les nouvelles données, il suffit de pull. Pour spécifier comment réconcilier les branches : git config pull.rebase true, puis git pull</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="a00s01_prise_main_materiel.html" class="btn btn-neutral float-left" title="Prise en main du matériel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="a00s02_dynamixel.html" class="btn btn-neutral float-right" title="Premier pas avec les Dynamixel" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Manuel YGUEL.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
