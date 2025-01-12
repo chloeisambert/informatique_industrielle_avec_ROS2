@@ -2,6 +2,76 @@
 Astuces et outils
 ==============================
 
+Astuces Git
+=======================================
+
+Utiliser `git add -u`
+-------------------------
+
+La commande `git add -u` est utilisée pour mettre à jour l'index avec les modifications apportées aux fichiers déjà suivis par Git (modifiés ou supprimés), sans inclure de nouveaux fichiers non suivis.
+
+1. **Ajouter les modifications des fichiers suivis** :
+
+   Utilisez la commande suivante pour ajouter uniquement les modifications des fichiers déjà suivis par Git (et éviter d'ajouter des fichiers non nécessaires et seulement les fichiers que vous venez de modifier) :
+
+   .. code-block:: bash
+
+      git add -u
+
+   - Cette commande met à jour l'index en incluant :
+
+     - Les fichiers modifiés.
+     - Les fichiers supprimés.*
+
+   - Les fichiers non suivis (nouveaux fichiers) ne sont pas pris en compte.
+   - Une fois la commande exécutée, utilisez `git status` pour vérifier quels fichiers ont été ajoutés à l'index.
+
+2. **Ajouter les modifications dans un répertoire spécifique** :
+
+   Si vous souhaitez limiter l'opération à un répertoire particulier, utilisez :
+
+   .. code-block:: bash
+
+      git add -u <chemin_du_répertoire>
+
+   - Exemple : Ajouter uniquement les modifications dans le dossier `src` :
+     ```bash
+     git add -u src/
+     ```
+
+
+Réinitialiser un fichier modifié
+--------------------------------
+
+Si vous avez modifié un fichier dans votre dépôt Git mais souhaitez revenir à son état initial (tel qu'il était dans le dernier commit), suivez ces étapes :
+
+1. **Réinitialiser le fichier** :
+
+   Pour annuler les modifications et ramener le fichier à son état initial, utilisez la commande suivante :
+
+   .. code-block:: bash
+
+      git restore <nom_du_fichier>
+
+   - Cette commande remet le fichier dans l'état qu'il avait lors du dernier commit.
+   - Si vous utilisez une version de Git antérieure à 2.23, utilisez cette alternative :
+
+     .. code-block:: bash
+
+        git checkout -- <nom_du_fichier>
+
+2. **Vérifiez l'état** :
+
+   Une fois la commande exécutée, vérifiez que le fichier n'apparaît plus comme modifié avec :
+
+   .. code-block:: bash
+
+      git status
+
+   Cette commande confirme que le fichier a bien été réinitialisé.
+
+
+
 Applications ou extensions optionnelles
 =======================================
 
